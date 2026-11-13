@@ -13,9 +13,12 @@ public class NumberGuessingGame {
 
         // Scanner class used
         Scanner sc = new Scanner(System.in);
+        // random number generator class object creation
+        Random rand = new Random();
 
         // defining range of random number;
         int min = 1, max = 100;
+
         
         Random rand = new Random(min)//
     }
