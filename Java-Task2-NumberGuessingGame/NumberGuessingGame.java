@@ -28,6 +28,9 @@ public class NumberGuessingGame {
         System.out.println("- Random Number Generated between 1 to 100.");
         System.out.println("- You have to Guess the number based on hints.");
 
+        int guess, attempts;
+
+        // take user guesses unitlit it matches random number
         do {
             // code
         } while (guess == random);
