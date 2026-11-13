@@ -50,6 +50,11 @@ public class NumberGuessingGame {
 
                 // User output if guess is higher than number 
                 System.out.println("Your Guess is too high!");
+
+            } else if (guess < random) {
+
+                // User output if guess is lower than number 
+                System.out.println("Your Guess is too low!");
             }
 
         }
