@@ -32,7 +32,7 @@ public class NumberGuessingGame {
         int guess, attempts = 0;
 
         // take user guesses unitlit it matches random number
-        do {
+        while (guess != random) {
             
             System.out.print("Enter Your Guess: ");
             guess = sc.nextInt();
@@ -40,7 +40,7 @@ public class NumberGuessingGame {
             // attempt updates
             attempts++;
 
-        } while (guess == random);
+        }
 
         // User output after Correct Guessed.
         System.out.println("Comgratulations! You guessed correct!");
