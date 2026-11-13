@@ -10,6 +10,11 @@ import java.util.Scanner;
 // main function 
 public class NumberGuessingGame {
     public static void main(String args[]) {
-        
+
+        // Scanner class used
+        Scanner sc = new Scanner(System.in);
+
+        // defi
+        Random rand = new Random(min)//
     }
 }
