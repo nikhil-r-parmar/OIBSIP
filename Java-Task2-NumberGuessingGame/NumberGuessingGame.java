@@ -42,6 +42,9 @@ public class NumberGuessingGame {
 
         } while (guess == random);
 
+        // User output after Correct Guessed.
+        System.out.println("Comgratulations! You guessed correct!");
+        System.out.println("Your attempts: " + attempts);
         
     }
 }
