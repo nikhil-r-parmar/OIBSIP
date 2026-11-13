@@ -19,7 +19,9 @@ public class NumberGuessingGame {
         // defining range of random number;
         int min = 1, max = 100;
 
-        
-        Random rand = new Random(min)//
+        // creating random Number between given range
+        int random = rand.(max-min + 1) + 1//
+
+        System.out.println(random);
     }
 }
