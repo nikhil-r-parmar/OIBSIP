@@ -3,3 +3,6 @@
 // Number Guessing Game
 // Author : Nikhil R. Parmar
 
+import java.util.Random;
+import java.util.Scanner;
+
