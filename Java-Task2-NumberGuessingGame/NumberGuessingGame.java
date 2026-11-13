@@ -29,7 +29,7 @@ public class NumberGuessingGame {
         System.out.println("- You have to Guess the number based on hints.");
 
         // added variables to store guessed number & attempts.
-        int guess, attempts = 0;
+        int guess = 0, attempts = 0;
 
         // take user guesses unitlit it matches random number
         while (guess != random) {
