@@ -20,7 +20,7 @@ public class NumberGuessingGame {
         int min = 1, max = 100;
 
         // creating random Number between given range
-        int random = rand.(max-min + 1) + 1//
+        int random = rand.nextInt(max-min + 1) + 1;
 
         System.out.println(random);
     }
