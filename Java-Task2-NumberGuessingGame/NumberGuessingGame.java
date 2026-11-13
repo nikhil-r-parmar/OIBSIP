@@ -22,6 +22,10 @@ public class NumberGuessingGame {
         // creating random Number between given range
         int random = rand.nextInt(max-min + 1) + 1;
 
-        System.out.println(random);
+        
+        // PLAYER UI 
+        System.out.println("|| NUMBER GUESSING GAME ||");
+        System.out.println("- Random Number Generated between 1 to 100.");
+        System.out.println("- You have to Guess the number based on hints.");
     }
 }
