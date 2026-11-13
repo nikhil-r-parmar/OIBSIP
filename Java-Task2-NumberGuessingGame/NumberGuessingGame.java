@@ -14,7 +14,9 @@ public class NumberGuessingGame {
         // Scanner class used
         Scanner sc = new Scanner(System.in);
 
-        // defi
+        // defining range of random number;
+        int min = 1, max = 100;
+        
         Random rand = new Random(min)//
     }
 }
