@@ -40,11 +40,19 @@ public class NumberGuessingGame {
             // attempt updates
             attempts++;
 
-        }
+            if (guess == random) {
 
-        // User output after Correct Guessed.
-        System.out.println("Comgratulations! You guessed correct!");
-        System.out.println("Your attempts: " + attempts);
+                // User output after Correct Guessed.
+                System.out.println("Comgratulations! You guessed correct!");
+                System.out.println("Your attempts: " + attempts);
+
+            } else if (guess > random) {
+
+                // User output if guess is higher than number 
+                System.out.println("Your Guess is too high!");
+            }
+
+        }
         
     }
 }
