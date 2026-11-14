@@ -38,57 +38,56 @@ public class NumberGuessingGame {
             // take user guesses unitil it matches random number
             while (guess != random) {
             
-            System.out.print("Enter Your Guess: ");
-            guess = sc.nextInt();
+                System.out.print("Enter Your Guess: ");
+                guess = sc.nextInt();
 
-            // input validation
-            if (guess < 1 || guess > 100) {
-                System.out.println("Invalid Input! Enter a Number between 1 & 100.");
-                continue;
-            }
+                // input validation
+                if (guess < 1 || guess > 100) {
+                    System.out.println("Invalid Input! Enter a Number between 1 & 100.");
+                    continue;
+                }
 
-            // attempt updates
-            attempts++;
+                // attempt updates
+                attempts++;
 
-            if (guess == random) {
+                if (guess == random) {
 
-                // User output after Correct Guessed.
-                System.out.println("Congratulations! You guessed correct!");
-                System.out.println("Your attempts: " + attempts);
+                    // User output after Correct Guessed.
+                    System.out.println("Congratulations! You guessed correct!");
+                    System.out.println("Your attempts: " + attempts);
 
-                // feature if user want's to play again
-                sc.nextLine(); // consume leftover newline
-                System.out.print("Do you want to play again? (yes/no): ");
-                ip = sc.nextLine().trim().toLowerCase();
-
-                while (!ip.equals("yes") && !ip.equals("no")) {
-                    System.out.print("Please enter yes or no: ");
+                    // feature if user want's to play again
+                    sc.nextLine(); // consume leftover newline
+                    System.out.print("Do you want to play again? (yes/no): ");
                     ip = sc.nextLine().trim().toLowerCase();
+
+                    while (!ip.equals("yes") && !ip.equals("no")) {
+                        System.out.print("Please enter yes or no: ");
+                        ip = sc.nextLine().trim().toLowerCase();
+                    }
+
+                    if (ip.equals("no")) {
+                        System.out.println("GoodBye!");
+                        break;
+                    }
+
+                } else if (guess > random) {
+
+                    // User output if guess is higher than number 
+                    System.out.println("Your Guess is too high!");
+
+                } else if (guess < random) {
+
+                    // User output if guess is lower than number 
+                    System.out.println("Your Guess is too low!");
                 }
 
-                if (ip.equals("no")) {
-                    System.out.println("GoodBye!");
-                    break;
-                }
 
-            } else if (guess > random) {
-
-                // User output if guess is higher than number 
-                System.out.println("Your Guess is too high!");
-
-            } else if (guess < random) {
-
-                // User output if guess is lower than number 
-                System.out.println("Your Guess is too low!");
             }
-
-            
-
-        }
         
-    }
+        }
 
-    // closing scanner class
-    sc.close();
-}
+        // closing scanner class
+        sc.close();
+    }
 }
