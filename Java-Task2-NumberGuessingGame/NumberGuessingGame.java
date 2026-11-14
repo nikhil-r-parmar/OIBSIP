@@ -40,12 +40,11 @@ public class NumberGuessingGame {
             // input validation
             if (guess < 1 && guess > 100) {
                 System.out.println("Invalid Input! Enter a Number between 1 & 100.");
-            } else {
-
-                // attempt updates
-                attempts++;
-
+                continue;
             }
+
+            // attempt updates
+            attempts++;
 
             if (guess == random) {
 
