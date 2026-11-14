@@ -58,6 +58,9 @@ public class NumberGuessingGame {
             }
 
         }
+
+        // closing scanner class
+        sc.close();
         
     }
 }
