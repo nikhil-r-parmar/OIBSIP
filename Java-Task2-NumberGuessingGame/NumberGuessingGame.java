@@ -38,7 +38,7 @@ public class NumberGuessingGame {
             guess = sc.nextInt();
 
             // input validation
-            if (guess < 1 && guess > 100) {
+            if (guess < 1 || guess > 100) {
                 System.out.println("Invalid Input! Enter a Number between 1 & 100.");
                 continue;
             }
