@@ -31,8 +31,12 @@ public class NumberGuessingGame {
         // added variables to store guessed number & attempts.
         int guess = 0, attempts = 0;
 
-        // take user guesses unitil it matches random number
-        while (guess != random) {
+        String ip = "yes";
+
+        while (ip.equals("yes")) {
+
+            // take user guesses unitil it matches random number
+            while (guess != random) {
             
             System.out.print("Enter Your Guess: ");
             guess = sc.nextInt();
@@ -54,9 +58,11 @@ public class NumberGuessingGame {
 
                 // feature if user want's to play again
                 System.out.print("Do you want to play again? (yes/no): 71");
-                String ip = sc.nextLine();
+                ip = sc.nextLine();
 
-                
+                if (ip.equals("no")) {
+                    break;
+                }
 
             } else if (guess > random) {
 
