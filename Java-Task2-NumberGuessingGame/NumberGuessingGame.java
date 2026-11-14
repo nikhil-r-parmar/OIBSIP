@@ -66,6 +66,11 @@ public class NumberGuessingGame {
                     break;
                 }
 
+                while (!ip.equals("yes") && !ip.equals("no")) {
+                    System.out.print("Please enter yes or no: ");
+                    ip = sc.nextLine().trim().toLowerCase();
+                }
+
             } else if (guess > random) {
 
                 // User output if guess is higher than number 
