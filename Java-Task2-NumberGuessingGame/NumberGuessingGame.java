@@ -6,6 +6,7 @@
 // imported needed libraries
 import java.util.Random;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 // main function 
 public class NumberGuessingGame {
@@ -38,8 +39,16 @@ public class NumberGuessingGame {
             // take user guesses unitil it matches random number
             while (guess != random) {
             
-                System.out.print("Enter Your Guess: ");
-                guess = sc.nextInt();
+                try {
+                    System.out.print("Enter Your Guess: ");
+                    guess = sc.nextInt();
+
+                } catch(InputMismatchException e) {
+
+                    System.out.println("Given input is not a valid number!");
+                    sc.nextLine();
+                    continue;
+                }
 
                 // input validation
                 if (guess < 1 || guess > 100) {
@@ -56,14 +65,21 @@ public class NumberGuessingGame {
                     System.out.println("Congratulations! You guessed correct!");
                     System.out.println("Your attempts: " + attempts);
 
-                    // feature if user want's to play again
-                    sc.nextLine(); // consume leftover newline
-                    System.out.print("Do you want to play again? (yes/no): ");
-                    ip = sc.nextLine().trim().toLowerCase();
-
-                    while (!ip.equals("yes") && !ip.equals("no")) {
-                        System.out.print("Please enter yes or no: ");
+                    try {
+                        // feature if user want's to play again
+                        sc.nextLine(); // consume leftover newline
+                        System.out.print("Do you want to play again? (yes/no): ");
                         ip = sc.nextLine().trim().toLowerCase();
+
+                        while (!ip.equals("yes") && !ip.equals("no")) {
+                            System.out.print("Please enter yes or no: ");
+                            ip = sc.nextLine().trim().toLowerCase();
+                        }
+                    } catch(InputMismatchException e) {
+
+                        System.out.println("Given input is not a valid number!");
+                        sc.nextLine();
+                        continue;
                     }
 
                     if (ip.equals("no")) {
