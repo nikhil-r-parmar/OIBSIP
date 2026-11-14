@@ -18,10 +18,6 @@ public class NumberGuessingGame {
 
         // defining range of random number;
         int min = 1, max = 100;
-
-        // creating random Number between given range
-        int random = rand.nextInt(max-min + 1) + min;
-
         
         // PLAYER UI 
         System.out.println("|| NUMBER GUESSING GAME ||");
@@ -34,6 +30,10 @@ public class NumberGuessingGame {
         String ip = "yes";
 
         while (ip.equals("yes")) {
+
+            // creating random Number between given range
+            int random = rand.nextInt(max-min + 1) + min;
+
 
             // take user guesses unitil it matches random number
             while (guess != random) {
@@ -57,7 +57,7 @@ public class NumberGuessingGame {
                 System.out.println("Your attempts: " + attempts);
 
                 // feature if user want's to play again
-                System.out.print("Do you want to play again? (yes/no): 71");
+                System.out.print("Do you want to play again? (yes/no): ");
                 ip = sc.nextLine();
 
                 if (ip.equals("no")) {
