@@ -77,11 +77,13 @@ public class NumberGuessingGame {
                 System.out.println("Your Guess is too low!");
             }
 
-
-            // closing scanner class
-            sc.close();
+            
 
         }
         
     }
+
+    // closing scanner class
+    sc.close();
+}
 }
