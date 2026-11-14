@@ -59,16 +59,16 @@ public class NumberGuessingGame {
                 // feature if user want's to play again
                 sc.nextLine(); // consume leftover newline
                 System.out.print("Do you want to play again? (yes/no): ");
-                ip = sc.nextLine().toLowerCase();
-
-                if (ip.equals("no")) {
-                    System.out.println("GoodBye!");
-                    break;
-                }
+                ip = sc.nextLine().trim().toLowerCase();
 
                 while (!ip.equals("yes") && !ip.equals("no")) {
                     System.out.print("Please enter yes or no: ");
                     ip = sc.nextLine().trim().toLowerCase();
+                }
+
+                if (ip.equals("no")) {
+                    System.out.println("GoodBye!");
+                    break;
                 }
 
             } else if (guess > random) {
