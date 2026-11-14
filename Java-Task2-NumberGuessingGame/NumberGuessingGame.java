@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 // main function 
 public class NumberGuessingGame {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         // Scanner class used
         Scanner sc = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class NumberGuessingGame {
         // added variables to store guessed number & attempts.
         int guess = 0, attempts = 0;
 
-        // take user guesses unitlit it matches random number
+        // take user guesses unitil it matches random number
         while (guess != random) {
             
             System.out.print("Enter Your Guess: ");
@@ -43,7 +43,7 @@ public class NumberGuessingGame {
             if (guess == random) {
 
                 // User output after Correct Guessed.
-                System.out.println("Comgratulations! You guessed correct!");
+                System.out.println("Congratulations! You guessed correct!");
                 System.out.println("Your attempts: " + attempts);
 
             } else if (guess > random) {
