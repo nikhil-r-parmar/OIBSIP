@@ -65,21 +65,15 @@ public class NumberGuessingGame {
                     System.out.println("Congratulations! You guessed correct!");
                     System.out.println("Your attempts: " + attempts);
 
-                    try {
-                        // feature if user want's to play again
-                        sc.nextLine(); // consume leftover newline
-                        System.out.print("Do you want to play again? (yes/no): ");
+
+                    // feature if user want's to play again
+                    sc.nextLine(); // consume leftover newline
+                    System.out.print("Do you want to play again? (yes/no): ");
+                    ip = sc.nextLine().trim().toLowerCase();
+
+                    while (!ip.equals("yes") && !ip.equals("no")) {
+                        System.out.print("Please enter yes or no: ");
                         ip = sc.nextLine().trim().toLowerCase();
-
-                        while (!ip.equals("yes") && !ip.equals("no")) {
-                            System.out.print("Please enter yes or no: ");
-                            ip = sc.nextLine().trim().toLowerCase();
-                        }
-                    } catch(InputMismatchException e) {
-
-                        System.out.println("Given input is not a valid number!");
-                        sc.nextLine();
-                        continue;
                     }
 
                     if (ip.equals("no")) {
