@@ -57,6 +57,7 @@ public class NumberGuessingGame {
                 System.out.println("Your attempts: " + attempts);
 
                 // feature if user want's to play again
+                sc.nextLine(); // consume leftover newline
                 System.out.print("Do you want to play again? (yes/no): ");
                 ip = sc.nextLine().toLowerCase();
 
@@ -76,10 +77,11 @@ public class NumberGuessingGame {
                 System.out.println("Your Guess is too low!");
             }
 
-        }
 
-        // closing scanner class
-        sc.close();
+            // closing scanner class
+            sc.close();
+
+        }
         
     }
 }
