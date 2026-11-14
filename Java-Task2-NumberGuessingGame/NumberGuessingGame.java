@@ -24,12 +24,12 @@ public class NumberGuessingGame {
         System.out.println("- Random Number Generated between 1 to 100.");
         System.out.println("- You have to Guess the number based on hints.");
 
-        // added variables to store guessed number & attempts.
-        int guess = 0, attempts = 0;
-
         String ip = "yes";
 
         while (ip.equals("yes")) {
+
+            // added variables to store guessed number & attempts.
+            int guess = 0, attempts = 0;
 
             // creating random Number between given range
             int random = rand.nextInt(max-min + 1) + min;
@@ -58,7 +58,7 @@ public class NumberGuessingGame {
 
                 // feature if user want's to play again
                 System.out.print("Do you want to play again? (yes/no): ");
-                ip = sc.nextLine();
+                ip = sc.nextLine().toLowerCase();
 
                 if (ip.equals("no")) {
                     System.out.println("GoodBye!");
