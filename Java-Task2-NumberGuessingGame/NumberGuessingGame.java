@@ -52,6 +52,12 @@ public class NumberGuessingGame {
                 System.out.println("Congratulations! You guessed correct!");
                 System.out.println("Your attempts: " + attempts);
 
+                // feature if user want's to play again
+                System.out.print("Do you want to play again? (yes/no): 71");
+                String ip = sc.nextLine();
+
+                
+
             } else if (guess > random) {
 
                 // User output if guess is higher than number 
