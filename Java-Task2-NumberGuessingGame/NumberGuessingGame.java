@@ -61,6 +61,7 @@ public class NumberGuessingGame {
                 ip = sc.nextLine();
 
                 if (ip.equals("no")) {
+                    System.out.println("GoodBye!");
                     break;
                 }
 
