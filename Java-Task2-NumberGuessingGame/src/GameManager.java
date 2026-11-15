@@ -29,6 +29,12 @@ public class GameManager {
     // this method contains game logic
     public void startGame() {
 
+        // reset's attempts to zero
+        atteps = 0;
+
+        //calling random number method
+        int random = generateRandomNumber();
+
         // PLAYER INTERFACE
         System.out.println("|| NUMBER GUESSING GAME ||");
         System.out.println("- Random Number Generated between 1 to 100.");
