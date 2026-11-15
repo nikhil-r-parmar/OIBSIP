@@ -7,10 +7,10 @@ import java.util.Random;
 public class GameManager {
     
     // creating object of game input class 
-    private GameInput input = new GameInput();
+    private final GameInput input = new GameInput();
 
     // random number generator class object creation
-    private Random rand = new Random();
+    private final Random rand = new Random();
 
     // defining range of random number;
     private int min = 1, max = 100;
@@ -29,7 +29,7 @@ public class GameManager {
     // this method contains game logic
     public void startGame() {
 
-        String playagain = "yes";   // added default play input
+        String playAgain = "yes";   // added default play input
 
         // PLAYER INTERFACE
         System.out.println("|| NUMBER GUESSING GAME ||");
@@ -37,7 +37,7 @@ public class GameManager {
         System.out.println("- You have to Guess the number based on hints.");
 
 
-        while (playagain.equals("yes")) {
+        while (playAgain.equals("yes")) {
 
             // reset's attempts to zero
             attempts = 0;
@@ -72,7 +72,7 @@ public class GameManager {
             System.out.println("Congratulations! You guessed correct!");
             System.out.println("Your attempts: " + attempts);
 
-            playagain = input.getYesNoInput();
+            playAgain = input.getYesNoInput();
 
         }
 
