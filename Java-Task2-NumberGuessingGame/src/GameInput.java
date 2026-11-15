@@ -20,6 +20,12 @@ public class GameInput {
                 System.out.print("Enter Your Guess: ");
                 guess = sc.nextInt();
 
+                // checkes if input is in given range 
+                if (guess < 1 || guess > 100) {
+                    System.out.println("Invalid Input! Enter a Number between 1 & 100.");
+                    continue;
+                }
+
                 // return's guessed number
                 return guess;
 
