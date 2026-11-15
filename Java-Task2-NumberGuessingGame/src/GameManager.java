@@ -26,4 +26,10 @@ public class GameManager {
         return random;
     }
 
+    // this method contains game logic
+    public void startGame() {
+        
+
+    }
+
 }
