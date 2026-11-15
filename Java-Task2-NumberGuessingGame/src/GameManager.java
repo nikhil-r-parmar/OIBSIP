@@ -32,14 +32,21 @@ public class GameManager {
         String playAgain = "yes";   // added default play input
 
         // PLAYER INTERFACE
-        System.out.println("||===================================||");
-        System.out.println("||\t\t\t\t     ||");
-        System.out.println("||\t  NUMBER GUESSING GAME\t     ||");
-        System.out.println("||\t      JAVA EDITION\t     ||");
-        System.out.println("||\t\t\t\t     ||");
-        System.out.println("||===================================||\n");
-        System.out.println("- Random Number Generated between 1 to 100.");
-        System.out.println("- You have to Guess the number based on hints.");
+        System.out.println("||======================================||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||\t   NUMBER GUESSING GAME\t\t||");
+        System.out.println("||\t       JAVA EDITION\t\t||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||======================================||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("|| Welcome to Number Guessing Game.\t||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("|| Range      : 1 - 100\t\t\t||");
+        System.out.println("|| Difficulty : Normal\t\t\t||");
+        System.out.println("|| Objective  : Guess the secret number.||");
+        System.out.println("|| Developer  : Nikhil Parmar\t\t||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||======================================||");
 
 
         while (playAgain.equals("yes")) {
