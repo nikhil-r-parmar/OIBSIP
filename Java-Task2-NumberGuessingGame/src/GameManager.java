@@ -18,6 +18,8 @@ public class GameManager {
     // added variables to store guessed number & attempts.
     private int guess = 0, attempts = 0;
 
+    String playagain = "yes";   // added default play input
+
     // method that generate's random number 
     private int generateRandomNumber() {
         // creating random Number between given range
@@ -67,6 +69,7 @@ public class GameManager {
         // User output after Correct Guessed.
         System.out.println("Congratulations! You guessed correct!");
         System.out.println("Your attempts: " + attempts);
+        input.getYesNoInput();
 
     }
 
