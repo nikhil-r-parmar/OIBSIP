@@ -32,7 +32,12 @@ public class GameManager {
         String playAgain = "yes";   // added default play input
 
         // PLAYER INTERFACE
-        System.out.println("|| NUMBER GUESSING GAME ||");
+        System.out.println("||===================================||");
+        System.out.println("||\t\t\t\t     ||");
+        System.out.println("||\t  NUMBER GUESSING GAME\t     ||");
+        System.out.println("||\t      JAVA EDITION\t     ||");
+        System.out.println("||\t\t\t\t     ||");
+        System.out.println("||===================================||\n");
         System.out.println("- Random Number Generated between 1 to 100.");
         System.out.println("- You have to Guess the number based on hints.");
 
