@@ -29,13 +29,6 @@ public class GameManager {
     // this method contains game logic
     public void startGame() {
 
-        // reset's attempts to zero
-        attempts = 0;
-        guess = 0;
-
-        //calling random number method
-        int random = generateRandomNumber();
-
         String playagain = "yes";   // added default play input
 
         // PLAYER INTERFACE
@@ -44,33 +37,47 @@ public class GameManager {
         System.out.println("- You have to Guess the number based on hints.");
 
 
-        while ()
-        while (guess != random) {
+        while (playagain.equals("yes")) {
 
-            if (guess > random) {
+            // reset's attempts to zero
+            attempts = 0;
+            guess = 0;
 
-                // User output if guess is higher than number 
-                System.out.println("Your Guess is too high!");
+            //calling random number method
+            int random = generateRandomNumber();
 
-            } else if (guess < random) {
+            do {
 
-                // User output if guess is lower than number 
-                System.out.println("Your Guess is too low!");
+                // user guessed input 
+                guess = input.getIntegerInput();
+
+                // attempts updation    
+                attempts++;
+
+                if (guess > random) {
+
+                    // User output if guess is higher than number 
+                    System.out.println("Your Guess is too high!");
+
+                } else if (guess < random) {
+
+                    // User output if guess is lower than number 
+                    System.out.println("Your Guess is too low!");
                 
-            }
+                }
 
-            // user guessed input 
-            guess = input.getIntegerInput();
+            } while (guess != random);
 
-            // attempts updation    
-            attempts++;
+            // User output after Correct Guessed.
+            System.out.println("Congratulations! You guessed correct!");
+            System.out.println("Your attempts: " + attempts);
 
-        } 
+            playagain = input.getYesNoInput();
 
-        // User output after Correct Guessed.
-        System.out.println("Congratulations! You guessed correct!");
-        System.out.println("Your attempts: " + attempts);
-        input.getYesNoInput();
+        }
+
+        System.out.println("\nGoodBye! \n");
+        
 
     }
 
