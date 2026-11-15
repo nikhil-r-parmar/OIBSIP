@@ -19,6 +19,8 @@ public class GameInput {
                 System.out.print("Enter Your Guess: ");
                 guess = sc.nextInt();
 
+                return guess;
+                
             } catch(InputMismatchException e) {
 
                 System.out.println("Given input is not a valid number!");
@@ -27,7 +29,7 @@ public class GameInput {
             }
         }
 
-        return guess;
+        return;
     }
 
     // method to take replay input
