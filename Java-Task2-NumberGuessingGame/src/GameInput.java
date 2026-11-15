@@ -9,6 +9,19 @@ public class GameInput {
 
     // method to take answer input
     public int getIntegerInput() {
+
+        while(true) {
+            try {
+                System.out.print("Enter Your Guess: ");
+                guess = sc.nextInt();
+
+            } catch(InputMismatchException e) {
+
+                System.out.println("Given input is not a valid number!");
+                sc.nextLine();
+                continue;
+            }
+        }
     }
 
     // method to take replay input
