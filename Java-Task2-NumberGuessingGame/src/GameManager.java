@@ -8,4 +8,14 @@ public class GameManager {
     
     // creating object of game input class 
     private GameInput input = new GameInput();
+
+    // random number generator class object creation
+    private Random rand = new Random();
+
+    // defining range of random number;
+    private int min = 1, max = 100;
+
+    // added variables to store guessed number & attempts.
+    private int guess = 0, attempts = 0;
+
 }
