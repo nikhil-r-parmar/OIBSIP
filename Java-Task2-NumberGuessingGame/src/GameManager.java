@@ -31,17 +31,42 @@ public class GameManager {
 
         // reset's attempts to zero
         attempts = 0;
+        guess = 0;
 
         //calling random number method
         int random = generateRandomNumber();
-
-        // user guessed input 
-        int guess = input.getIntegerInput();
 
         // PLAYER INTERFACE
         System.out.println("|| NUMBER GUESSING GAME ||");
         System.out.println("- Random Number Generated between 1 to 100.");
         System.out.println("- You have to Guess the number based on hints.");
+
+
+        while (guess != random) {
+
+            if (guess > random) {
+
+                // User output if guess is higher than number 
+                System.out.println("Your Guess is too high!");
+
+            } else if (guess < random) {
+
+                // User output if guess is lower than number 
+                System.out.println("Your Guess is too low!");
+                
+            }
+
+            // user guessed input 
+            guess = input.getIntegerInput();
+
+            // attempts updation    
+            attempts++;
+
+        } 
+
+        // User output after Correct Guessed.
+        System.out.println("Congratulations! You guessed correct!");
+        System.out.println("Your attempts: " + attempts);
 
     }
 
