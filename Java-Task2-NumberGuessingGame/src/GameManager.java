@@ -57,6 +57,7 @@ public class GameManager {
 
             //calling random number method
             int random = generateRandomNumber();
+            
 
             do {
 
@@ -66,15 +67,28 @@ public class GameManager {
                 // attempts updation    
                 attempts++;
 
+                System.out.println("||======================================||");
+                System.out.println("||\t       GAME STARTED\t\t||");
+                System.out.println("||======================================||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("|| Attempts      : 1 - 100\t\t||");
+                System.out.println("|| Number Range  : 1 - 100\t\t||");
+                System.out.println("||\t\t\t\t\t||");
+                
+
                 if (guess > random) {
 
                     // User output if guess is higher than number 
-                    System.out.println("Your Guess is too high!");
+                    System.out.println("|| Hint: Your Guess is too high!\t||");
+                    System.out.println("||\t\t\t\t\t||");
+                    System.out.println("||======================================||");
 
                 } else if (guess < random) {
 
                     // User output if guess is lower than number 
-                    System.out.println("Your Guess is too low!");
+                    System.out.println("|| Hint: Your Guess is too low!\t\t||");
+                    System.out.println("||\t\t\t\t\t||");
+                    System.out.println("||======================================||");
                 
                 }
 
