@@ -12,6 +12,8 @@ public class GameInput {
     // method to take answer input
     public int getIntegerInput() {
 
+        int guess;
+
         while(true) {
             try {
                 System.out.print("Enter Your Guess: ");
@@ -24,6 +26,8 @@ public class GameInput {
                 continue;
             }
         }
+
+        return guess;
     }
 
     // method to take replay input
