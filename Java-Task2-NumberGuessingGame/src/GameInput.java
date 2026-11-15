@@ -50,6 +50,8 @@ public class GameInput {
             System.out.print("Please enter yes or no: ");
             ip = sc.nextLine().trim().toLowerCase();
 
+            return ip;
+
         }
 
         if (ip.equals("no")) {
