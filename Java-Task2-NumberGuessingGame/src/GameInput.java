@@ -16,13 +16,16 @@ public class GameInput {
 
         while(true) {
             try {
+                // takes input of user's guessed number
                 System.out.print("Enter Your Guess: ");
                 guess = sc.nextInt();
 
+                // return's guessed number
                 return guess;
-                
+
             } catch(InputMismatchException e) {
 
+                // shows messege if user enters invalid input
                 System.out.println("Given input is not a valid number!");
                 sc.nextLine();
                 continue;
