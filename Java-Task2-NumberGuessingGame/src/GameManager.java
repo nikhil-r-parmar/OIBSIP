@@ -18,4 +18,12 @@ public class GameManager {
     // added variables to store guessed number & attempts.
     private int guess = 0, attempts = 0;
 
+    // method that generate's random number 
+    private int generateRandomNumber() {
+        // creating random Number between given range
+        int random = rand.nextInt(max-min + 1) + min;
+
+        return random;
+    }
+
 }
