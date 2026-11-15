@@ -108,7 +108,13 @@ public class GameManager {
 
         }
 
-        System.out.println("\nGoodBye! \n");
+        System.out.println("||======================================||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||\t   THANKS FOR PLAYING\t\t||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||\t      GAME CLOSED\t\t||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||======================================||");
         
 
     }
