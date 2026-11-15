@@ -30,10 +30,13 @@ public class GameManager {
     public void startGame() {
 
         // reset's attempts to zero
-        atteps = 0;
+        attempts = 0;
 
         //calling random number method
         int random = generateRandomNumber();
+
+        // user guessed input 
+        int guess = input.getIntegerInput();
 
         // PLAYER INTERFACE
         System.out.println("|| NUMBER GUESSING GAME ||");
