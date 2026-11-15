@@ -32,7 +32,6 @@ public class GameInput {
             }
         }
 
-        return;
     }
 
     // method to take replay input
@@ -50,17 +49,10 @@ public class GameInput {
             System.out.print("Please enter yes or no: ");
             ip = sc.nextLine().trim().toLowerCase();
 
-            return ip;
-
         }
 
-        if (ip.equals("no")) {
-            System.out.println("GoodBye!");
-            break;
+        return ip;
 
-        }
-
-        return;
     }
     
 }
