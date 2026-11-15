@@ -19,7 +19,7 @@ public class GameInput {
                 // takes input of user's guessed number
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("|| ENTER YOUR GUESS\t\t\t||");
-                System.out.print("||   >> ");
+                System.out.print("|| >> ");
                 guess = sc.nextInt();
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("||======================================||");
@@ -53,13 +53,22 @@ public class GameInput {
 
         // feature if user want's to play again
 
+        System.out.println("||\t\t\t\t\t||");
         sc.nextLine(); // consume leftover newline
-        System.out.print("Do you want to play again? (yes/no): ");
+        System.out.println("|| PLAY AGAIN? [YES/NO]: \t\t||");
+        System.out.print("|| >> ");
         ip = sc.nextLine().trim().toLowerCase();
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||======================================||");
 
         while (!ip.equals("yes") && !ip.equals("no")) {
-            System.out.print("Please enter yes or no: ");
+
+            System.out.println("||\t\t\t\t\t||");
+            System.out.println("|| Please enter yes or no:\t\t||");
+            System.out.print("|| >> ");
             ip = sc.nextLine().trim().toLowerCase();
+            System.out.println("||\t\t\t\t\t||");
+            System.out.println("||======================================||");
 
         }
 
