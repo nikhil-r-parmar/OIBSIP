@@ -95,8 +95,14 @@ public class GameManager {
             } while (guess != random);
 
             // User output after Correct Guessed.
-            System.out.println("Congratulations! You guessed correct!");
-            System.out.println("Your attempts: " + attempts);
+            System.out.println("||======================================||");
+            System.out.println("||\t\t\t\t\t||");
+            System.out.println("||\t        YOU WON\t\t\t||");
+            System.out.println("||\t\t\t\t\t||");
+            System.out.println("||\t  Correct Guess: " + guess + "\t\t||");
+            System.out.println("||\t  Total Attempts: " + attempts + "\t\t||");
+            System.out.println("||\t\t\t\t\t||");
+            System.out.println("||======================================||");
 
             playAgain = input.getYesNoInput();
 
