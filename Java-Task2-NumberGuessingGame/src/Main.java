@@ -12,92 +12,9 @@ import java.util.InputMismatchException;
 public class Main {
     public static void main(String[] args) {
 
-        // Scanner class used
-        Scanner sc = new Scanner(System.in);
-        // random number generator class object creation
-        Random rand = new Random();
-
-        // defining range of random number;
-        int min = 1, max = 100;
-        
-        // PLAYER UI 
-        System.out.println("|| NUMBER GUESSING GAME ||");
-        System.out.println("- Random Number Generated between 1 to 100.");
-        System.out.println("- You have to Guess the number based on hints.");
-
-        String ip = "yes";
-
-        while (ip.equals("yes")) {
-
-            // added variables to store guessed number & attempts.
-            int guess = 0, attempts = 0;
-
-            // creating random Number between given range
-            int random = rand.nextInt(max-min + 1) + min;
+        // game manager object creation
+        GameManager game = new GameManager();
 
 
-            // take user guesses unitil it matches random number
-            while (guess != random) {
-            
-                try {
-                    System.out.print("Enter Your Guess: ");
-                    guess = sc.nextInt();
-
-                } catch(InputMismatchException e) {
-
-                    System.out.println("Given input is not a valid number!");
-                    sc.nextLine();
-                    continue;
-                }
-
-                // input validation
-                if (guess < 1 || guess > 100) {
-                    System.out.println("Invalid Input! Enter a Number between 1 & 100.");
-                    continue;
-                }
-
-                // attempt updates
-                attempts++;
-
-                if (guess == random) {
-
-                    // User output after Correct Guessed.
-                    System.out.println("Congratulations! You guessed correct!");
-                    System.out.println("Your attempts: " + attempts);
-
-
-                    // feature if user want's to play again
-                    sc.nextLine(); // consume leftover newline
-                    System.out.print("Do you want to play again? (yes/no): ");
-                    ip = sc.nextLine().trim().toLowerCase();
-
-                    while (!ip.equals("yes") && !ip.equals("no")) {
-                        System.out.print("Please enter yes or no: ");
-                        ip = sc.nextLine().trim().toLowerCase();
-                    }
-
-                    if (ip.equals("no")) {
-                        System.out.println("GoodBye!");
-                        break;
-                    }
-
-                } else if (guess > random) {
-
-                    // User output if guess is higher than number 
-                    System.out.println("Your Guess is too high!");
-
-                } else if (guess < random) {
-
-                    // User output if guess is lower than number 
-                    System.out.println("Your Guess is too low!");
-                }
-
-
-            }
-        
-        }
-
-        // closing scanner class
-        sc.close();
     }
 }
