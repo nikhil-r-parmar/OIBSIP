@@ -28,7 +28,11 @@ public class GameManager {
 
     // this method contains game logic
     public void startGame() {
-        
+
+        // PLAYER INTERFACE
+        System.out.println("|| NUMBER GUESSING GAME ||");
+        System.out.println("- Random Number Generated between 1 to 100.");
+        System.out.println("- You have to Guess the number based on hints.");
 
     }
 
