@@ -12,13 +12,19 @@ public class GameInput {
     // method to take answer input
     public int getIntegerInput() {
 
-        int guess;
+        int guess = 0;
 
         while(true) {
             try {
                 // takes input of user's guessed number
-                System.out.print("Enter Your Guess: ");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("|| ENTER YOUR GUESS\t\t\t||");
+                System.out.print("||   >> ");
                 guess = sc.nextInt();
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||======================================||");
+
+
 
                 // checkes if input is in given range 
                 if (guess < 1 || guess > 100) {

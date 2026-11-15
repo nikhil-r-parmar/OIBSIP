@@ -68,7 +68,7 @@ public class GameManager {
                 attempts++;
 
                 System.out.println("||======================================||");
-                System.out.println("||\t       GAME STARTED\t\t||");
+                System.out.println("||\t      GAME STARTED\t\t||");
                 System.out.println("||======================================||");
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("|| Attempts      : 1 - 100\t\t||");
