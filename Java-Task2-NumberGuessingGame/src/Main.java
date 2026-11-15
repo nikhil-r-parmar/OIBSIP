@@ -15,6 +15,8 @@ public class Main {
         // game manager object creation
         GameManager game = new GameManager();
 
+        // calling start game method using object
+        game.startGame();
 
     }
 }
