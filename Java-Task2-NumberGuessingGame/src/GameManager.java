@@ -18,8 +18,6 @@ public class GameManager {
     // added variables to store guessed number & attempts.
     private int guess = 0, attempts = 0;
 
-    String playagain = "yes";   // added default play input
-
     // method that generate's random number 
     private int generateRandomNumber() {
         // creating random Number between given range
@@ -38,12 +36,15 @@ public class GameManager {
         //calling random number method
         int random = generateRandomNumber();
 
+        String playagain = "yes";   // added default play input
+
         // PLAYER INTERFACE
         System.out.println("|| NUMBER GUESSING GAME ||");
         System.out.println("- Random Number Generated between 1 to 100.");
         System.out.println("- You have to Guess the number based on hints.");
 
 
+        while ()
         while (guess != random) {
 
             if (guess > random) {
