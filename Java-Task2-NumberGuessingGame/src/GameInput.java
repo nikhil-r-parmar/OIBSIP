@@ -1,8 +1,8 @@
 // from this class, user gives input for whole game
 
 // imported needed libraries
-import java.util.Scanner;
 import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class GameInput {
 
