@@ -28,8 +28,12 @@ public class GameInput {
 
                 // checkes if input is in given range 
                 if (guess < 1 || guess > 100) {
-                    System.out.println("Invalid Input! Enter a Number between 1 & 100.");
+                    System.out.println("||\t\t\t\t\t||");
+                    System.out.println("|| Enter a Number between 1 & 100.\t||");
+                    System.out.println("||\t\t\t\t\t||");
+                    System.out.println("||======================================||");
                     continue;
+
                 }
 
                 // return's guessed number
@@ -38,7 +42,10 @@ public class GameInput {
             } catch(InputMismatchException e) {
 
                 // shows messege if user enters invalid input
-                System.out.println("Given input is not a valid number!");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("|| Please Enter a valid Number.\t\t||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||======================================||");
                 sc.nextLine();
                 continue;
             }
