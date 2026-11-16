@@ -2,6 +2,7 @@
 
 
 // imported needed libraries
+import java.util.ArrayList;
 import java.util.Random;
 
 public class GameManager {
@@ -20,6 +21,12 @@ public class GameManager {
 
     // variable to count maximum attempts
     private static final int MAX_ATTEMPTS = 7;
+
+    // variables that counts total rounds, wins & losses
+    private int roundNumber = 0, wins = 0, losses = 0;
+
+    // arraylist that stores history
+    private final ArrayList<String> roundHistory = new ArrayList<>();
 
     // method that generate's random number 
     private int generateRandomNumber() {
