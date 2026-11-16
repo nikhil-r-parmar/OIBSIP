@@ -122,6 +122,8 @@ public class GameManager {
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("||======================================||");
 
+                roundHistory.add("Round " + roundNumber + " - Guessed in " + attempts + " attempts");
+
             } else {
 
                 // increase loose count
@@ -136,6 +138,9 @@ public class GameManager {
                 System.out.println("||\t  Total Attempts: " + attempts + "\t\t||");
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("||======================================||");
+
+                roundHistory.add("Round " + roundNumber + " - Lost in " + attempts + " attempts");
+
 
             }
 
