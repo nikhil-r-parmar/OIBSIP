@@ -18,6 +18,9 @@ public class GameManager {
     // added variables to store guessed number & attempts.
     private int guess = 0, attempts = 0;
 
+    // variable to count maximum attempts
+    private static final int MAX_ATTEMPTS = 7;
+
     // method that generate's random number 
     private int generateRandomNumber() {
         // creating random Number between given range
@@ -92,17 +95,31 @@ public class GameManager {
                 
                 }
 
-            } while (guess != random);
+            } while (guess != random && attempts<MAX_ATTEMPTS);
 
-            // User output after Correct Guessed.
-            System.out.println("||======================================||");
-            System.out.println("||\t\t\t\t\t||");
-            System.out.println("||\t        YOU WON\t\t\t||");
-            System.out.println("||\t\t\t\t\t||");
-            System.out.println("||\t  Correct Guess: " + guess + "\t\t||");
-            System.out.println("||\t  Total Attempts: " + attempts + "\t\t||");
-            System.out.println("||\t\t\t\t\t||");
-            System.out.println("||======================================||");
+            if (guess == random) {
+                // User output after Correct Guessed.
+                System.out.println("||======================================||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||\t        YOU WON\t\t\t||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||\t  Correct Guess: " + guess + "\t\t||");
+                System.out.println("||\t  Total Attempts: " + attempts + "\t\t||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||======================================||");
+
+            } else {
+                // User output after maximum attemps reach without correct Guess.
+                System.out.println("||======================================||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||\t       YOU LOST\t\t\t||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||\t  Correct Number: " + random + "\t\t||");
+                System.out.println("||\t  Total Attempts: " + attempts + "\t\t||");
+                System.out.println("||\t\t\t\t\t||");
+                System.out.println("||======================================||");
+
+            }
 
             playAgain = input.getYesNoInput();
 
