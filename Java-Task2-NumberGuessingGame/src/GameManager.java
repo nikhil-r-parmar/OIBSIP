@@ -39,6 +39,9 @@ public class GameManager {
     // this method contains game logic
     public void startGame() {
 
+        // increase round count
+        roundNumber++;
+
         String playAgain = "yes";   // added default play input
 
         // PLAYER INTERFACE
@@ -105,6 +108,10 @@ public class GameManager {
             } while (guess != random && attempts<MAX_ATTEMPTS);
 
             if (guess == random) {
+
+                // increase win count
+                wins++;
+
                 // User output after Correct Guessed.
                 System.out.println("||======================================||");
                 System.out.println("||\t\t\t\t\t||");
@@ -116,6 +123,10 @@ public class GameManager {
                 System.out.println("||======================================||");
 
             } else {
+
+                // increase loose count
+                losses++;
+                
                 // User output after maximum attemps reach without correct Guess.
                 System.out.println("||======================================||");
                 System.out.println("||\t\t\t\t\t||");
