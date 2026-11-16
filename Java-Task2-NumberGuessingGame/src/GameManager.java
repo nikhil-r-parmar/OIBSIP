@@ -122,6 +122,7 @@ public class GameManager {
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("||======================================||");
 
+                // storing history after every win
                 roundHistory.add("Round " + roundNumber + " - Guessed in " + attempts + " attempts");
 
             } else {
@@ -139,6 +140,7 @@ public class GameManager {
                 System.out.println("||\t\t\t\t\t||");
                 System.out.println("||======================================||");
 
+                // storing history after every lose
                 roundHistory.add("Round " + roundNumber + " - Lost in " + attempts + " attempts");
 
 
@@ -147,6 +149,24 @@ public class GameManager {
             playAgain = input.getYesNoInput();
 
         }
+
+        // displaying game summary.
+        System.out.println("||======================================||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||\t       GAME SUMMAARY\t\t||");
+        System.out.println("||\t\t\t\t\t||");
+        
+        for (String record : roundHistory) {
+            
+            System.out.println("|| " + record + "\t\t||");
+        }
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("||\t\t\t\t\t||");
+        System.out.println("|| Total Rounds : " + roundNumber + "\t\t\t||");
+        System.out.println("|| Wins         : " + wins + "\t\t\t||");
+        System.out.println("|| Looses       : " + losses + "\t\t\t||");
+        System.out.println("||======================================||");
+
 
         System.out.println("||======================================||");
         System.out.println("||\t\t\t\t\t||");
