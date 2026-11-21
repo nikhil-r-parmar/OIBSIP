@@ -43,6 +43,13 @@ public class Main {
                 // prints success if both matches
                 System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.userId);
+
+                // printing atm operations after successful logic
+                System.out.println("===== ATM MENU =====");
+                System.out.println("1. Check Balance");
+                System.out.println("2. Deposit Money");
+                System.out.println("3. Withdraw Monet");
+                System.out.println("4. Exit");
                 
             } else {
                 // print's it if pin doesn't match
