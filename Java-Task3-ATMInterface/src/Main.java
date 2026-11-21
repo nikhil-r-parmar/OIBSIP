@@ -40,14 +40,21 @@ public class Main {
         // checking if user id and pin matches or not
         if (uid.equals(acc.userId)) {
             if (pin == acc.pin) {
+                // prints success if both matches
                 System.out.println("Logic Successful!");
                 System.out.println("Welcome to " + acc.userId);
                 
+            } else {
+                // print's it if pin doesn't match
+                System.out.println("Invalid Pin");
+
             }
             
+        } else {
+            // prints it if uid doesn't match
+            System.out.println("Invalid User ID");
+
         }
-        System.out.println("User ID: " + acc.userId);
-        System.out.println("Balance: " + acc.balance);
 
     }
 }
