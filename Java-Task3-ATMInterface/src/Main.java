@@ -41,6 +41,7 @@ public class Main {
         if (uid.equals(acc.userId)) {
             if (pin == acc.pin) {
                 System.out.println("Logic Successful!");
+                System.out.println("Welcome to " + acc.userId);
                 
             }
             
