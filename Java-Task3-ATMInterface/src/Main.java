@@ -29,6 +29,10 @@ public class Main {
         acc.pin = 1234;
         acc.balance = 5000.0;
 
+        // taking inputs form user
+        System.out.print("Enter User ID: ");
+        String uid = sc.nextString();
+
         System.out.println("===== ACCOUNT DETAILS =====");
         System.out.println("User ID: " + acc.userId);
         System.out.println("Balance: " + acc.balance);
