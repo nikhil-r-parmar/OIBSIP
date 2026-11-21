@@ -30,13 +30,21 @@ public class Main {
         acc.balance = 5000.0;
 
         // taking inputs form user
+        System.out.println("===== ATM LOGIN =====");
         System.out.print("Enter User ID: ");
         String uid = sc.nextLine();
 
         System.out.print("Enter PIN: ");
         int pin = sc.nextInt();
 
-        System.out.println("===== ACCOUNT DETAILS =====");
+        // checking if user id and pin matches or not
+        if (uid.equals(acc.userId)) {
+            if (pin == acc.pin) {
+                System.out.println("Logic Successful!");
+                
+            }
+            
+        }
         System.out.println("User ID: " + acc.userId);
         System.out.println("Balance: " + acc.balance);
 
