@@ -3,6 +3,8 @@
 // ATM Interface
 // Author : Nikhil R. Parmar
 
+// imported scanner class
+import java.util.Scanner;
 
 // Accont class
 class Account {
