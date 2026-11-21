@@ -53,6 +53,29 @@ public class Main {
 
                 // taking user's choice as integer
                 int choice = sc.nextInt()
+
+                // using switch case to perform each operations
+                switch (choice) {
+                    case 1:
+                        System.out.println("Balance: " + acc.balance);
+                        break;
+
+                    case 2:
+                        System.out.println("Deposit option selected.");
+                        break;
+
+                    case 3:
+                        System.out.println("Withdraw option selected.");
+                        break;
+
+                    case 4:
+                        System.out.println("Thank you for using our ATM!");
+                        break;
+                    
+                    default:
+                        System.out.println("Invalid Choice!");
+
+                }
                 
             } else {
                 // print's it if pin doesn't match
