@@ -18,6 +18,9 @@ class Account {
 // main class
 public class Main {
     public static void main(String[] args) {
+        // creating object of scanner class to take inputs
+        Scanner sc = new Scanner(System.in);
+
         // created object of account class
         Account acc = new Account();
 
