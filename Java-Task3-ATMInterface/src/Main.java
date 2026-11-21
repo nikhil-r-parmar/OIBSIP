@@ -50,6 +50,9 @@ public class Main {
                 System.out.println("2. Deposit Money");
                 System.out.println("3. Withdraw Monet");
                 System.out.println("4. Exit");
+
+                // taking user's choice as integer
+                int choice = sc.nextInt()
                 
             } else {
                 // print's it if pin doesn't match
