@@ -52,7 +52,8 @@ public class Main {
                 System.out.println("4. Exit");
 
                 // taking user's choice as integer
-                int choice = sc.nextInt()
+                System.out.print("\nEnter your choice: ");
+                int choice = sc.nextInt();
 
                 // using switch case to perform each operations
                 switch (choice) {
