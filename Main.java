@@ -16,7 +16,13 @@ class Account {
 // main class
 public class Main {
     public static void main(String[] args) {
-        
+        // created object of account class
+        Account acc = new Account();
+
+        // initiallized account class variables
+        acc.userId = "NIKHIL101";
+        acc.pin = 1234;
+        acc.balance = 5000.0
 
     }
 }
