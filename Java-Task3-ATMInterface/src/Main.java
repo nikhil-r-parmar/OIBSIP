@@ -6,7 +6,7 @@
 // imported scanner class
 import java.util.Scanner;
 
-// Accont class
+// Account class
 class Account {
     // instace variables
     String userId;
@@ -24,12 +24,12 @@ public class Main {
         // created object of account class
         Account acc = new Account();
 
-        // initiallized account class variables
+        // initialized account class variables
         acc.userId = "NIKHIL101";
         acc.pin = 1234;
         acc.balance = 5000.0;
 
-        // taking inputs form user
+        // taking inputs from user
         System.out.println("===== ATM LOGIN =====");
         System.out.print("Enter User ID: ");
         String uid = sc.nextLine();
@@ -41,7 +41,7 @@ public class Main {
         if (uid.equals(acc.userId)) {
             if (pin == acc.pin) {
                 // prints success if both matches
-                System.out.println("Logic Successful!");
+                System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.userId);
                 
             } else {
