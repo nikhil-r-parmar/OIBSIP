@@ -31,7 +31,10 @@ public class Main {
 
         // taking inputs form user
         System.out.print("Enter User ID: ");
-        String uid = sc.nextString();
+        String uid = sc.nextLine();
+
+        System.out.print("Enter PIN: ");
+        int pin = sc.nextInt();
 
         System.out.println("===== ACCOUNT DETAILS =====");
         System.out.println("User ID: " + acc.userId);
