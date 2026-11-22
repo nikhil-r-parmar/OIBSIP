@@ -83,6 +83,12 @@ public class Main {
                         // asking user to enter withdrawal amount
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
+
+                        // checking if amount is less than zero or zero
+                        if (withdraw <= 0) {
+                            System.out.println("Invalid Withdrawal Amount!")
+
+                        }
                         break;
 
                     case 4:
