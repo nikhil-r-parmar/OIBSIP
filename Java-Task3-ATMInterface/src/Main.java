@@ -139,10 +139,13 @@ public class Main {
         }
 
         // outside after 3 attempts
-        } while(counter < 3);
+        } while(counter < 3 && !loggedIn);
 
-        System.out.println("Account locked!");
-        System.out.println("Too many failed login attempts.");
+        // locks account if not logged in in 3 attempts 
+        if(!loggedIn) {
+            System.out.println("Account locked!");
+            System.out.println("Too many failed login attempts.");
+        }
 
     }
 }
