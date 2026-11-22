@@ -24,6 +24,22 @@ public class Main {
 
     }
 
+    // method that deposit's money
+    public static double depositMoney(double balance, double amount) {
+        //checking whether amount is more than zero or not.
+                        if (amount > 0) {
+                            // updating and returning balance
+                            balance += amount;
+                            System.out.println("\nDeposit Successful!");
+
+                        } else {
+                            System.out.println("Invalid Deposit Amount!");
+
+                        }
+
+                        return balance;
+    }
+
     public static void main(String[] args) {
         // creating object of scanner class to take inputs
         Scanner sc = new Scanner(System.in);
@@ -86,17 +102,8 @@ public class Main {
                         System.out.print("Enter deposit amount: ");
                         double deposit = sc.nextDouble();
 
-                        //checking whether amount is more than zero or not.
-                        if (deposit > 0) {
-                            // updating and printing balance
-                            acc.balance += deposit;
-                            System.out.println("\nDeposit Successful!");
-                            System.out.println("Updated Balance: " + acc.balance);
-
-                        } else {
-                            System.out.println("Invalid Deposit Amount!");
-
-                        }
+                        acc.balance = depositMoney(acc.balance, deposit);
+                        System.out.println("Updated Balance: " + acc.balance);
                         break;
 
                     case 3:
