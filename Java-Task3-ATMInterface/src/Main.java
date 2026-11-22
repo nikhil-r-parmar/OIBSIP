@@ -92,6 +92,12 @@ public class Main {
                             // checks if withdrawal amount exceeds the balance
                             System.out.println("Insufficient Balance!");
 
+                        } else {
+                            // updating and printing balance
+                            acc.balance -= withdraw;
+                            System.out.println("\nWithdrawal Successful!");
+                            System.out.println("Updated Balance: " + acc.balance);
+
                         }
                         break;
 
