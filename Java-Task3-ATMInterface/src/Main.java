@@ -42,13 +42,13 @@ public class Main {
 
         System.out.print("Enter PIN: ");
         int pin = sc.nextInt();
+        sc.nextLine();  // another attempt for id
 
         // updates counter for each time;
         counter++;
 
         // checking if user id and pin matches or not
-        if (uid.equals(acc.userId)) {
-            if (pin == acc.pin) {
+        if (uid.equals(acc.userId) && pin == acc.pin) {
                 // prints success if both matches
                 System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.userId);
@@ -125,16 +125,10 @@ public class Main {
                 
                 // runs loop again till the choice is not 4
                 } while (choice != 4);
-                
-            } else {
-                // print's it if pin doesn't match
-                System.out.println("Invalid Pin");
-
-            }
             
         } else {
-            // prints it if uid doesn't match
-            System.out.println("Invalid User ID");
+            // prints it if uid & pin doesn't match
+            System.out.println("Invalid User ID or Pin.");
 
         }
 
