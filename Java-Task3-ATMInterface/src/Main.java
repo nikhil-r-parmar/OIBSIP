@@ -88,6 +88,10 @@ public class Main {
                         if (withdraw <= 0) {
                             System.out.println("Invalid Withdrawal Amount!")
 
+                        } else if (withdraw < acc.balance) {
+                            // checks if withdrawal amount axceeds the balance
+                            System.out.println("Insufficient Balance!");
+
                         }
                         break;
 
