@@ -70,7 +70,8 @@ public class Main {
                         if (deposit>0) {
 
                         } else {
-                            System.out.println()
+                            System.out.println("Invalid Deposit Amount!");
+
                         }
                         break;
 
