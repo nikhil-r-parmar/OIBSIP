@@ -80,7 +80,9 @@ public class Main {
                         break;
 
                     case 3:
-                        System.out.println("Withdraw option selected.");
+                        // asking user to enter withdrawal amount
+                        System.out.print("Enter withdrawal amount: ");
+                        double withdraw = sc.nextDouble();
                         break;
 
                     case 4:
