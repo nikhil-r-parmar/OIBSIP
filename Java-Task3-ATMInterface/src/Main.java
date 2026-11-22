@@ -62,7 +62,16 @@ public class Main {
                         break;
 
                     case 2:
-                        System.out.println("Deposit option selected.");
+                        // asking user to enter deposit amount
+                        System.out.print("Enter deposit amount: ");
+                        double deposit = sc.nextDouble();
+
+                        //checking whether amount is more than zero or not.
+                        if (deposit>0) {
+
+                        } else {
+                            System.out.println()
+                        }
                         break;
 
                     case 3:
