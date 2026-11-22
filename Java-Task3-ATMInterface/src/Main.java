@@ -135,5 +135,8 @@ public class Main {
 
         }
 
+        // outside after 3 attempts
+        } while(counter <= 3);
+
     }
 }
