@@ -67,10 +67,10 @@ public class Main {
                         double deposit = sc.nextDouble();
 
                         //checking whether amount is more than zero or not.
-                        if (deposit>0) {
+                        if (deposit > 0) {
                             // updating and printing balance
-                            balance += deposit;
-                            System.out.println("\nDeposit SUccessful!");
+                            acc.balance += deposit;
+                            System.out.println("\nDeposit Successful!");
                             System.out.println("Updated Balance: " + acc.balance);
 
                         } else {
