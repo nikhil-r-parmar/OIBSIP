@@ -27,37 +27,39 @@ public class Main {
     // method that deposit's money
     public static double depositMoney(double balance, double amount) {
         //checking whether amount is more than zero or not.
-                        if (amount > 0) {
-                            // updating and returning balance
-                            balance += amount;
-                            System.out.println("\nDeposit Successful!");
+        if (amount > 0) {
+            // updating and returning balance
+            balance += amount;
+            System.out.println("\nDeposit Successful!");
+            System.out.println("Updated Balance: " + balance);
 
-                        } else {
-                            System.out.println("Invalid Deposit Amount!");
+        } else {
+            System.out.println("Invalid Deposit Amount!");
 
-                        }
+        }
 
-                        return balance;
+        return balance;
     }
 
     // nethod that withdraw's money form balance
     public static double withdrawMoney(double balance, double amount) {
         // checking if amount is less than zero or zero
-                        if (amount <= 0) {
-                            System.out.println("Invalid Withdrawal Amount!");
+        if (amount <= 0) {
+            System.out.println("Invalid Withdrawal Amount!");
 
-                        } else if (balance < amount) {
-                            // checks if withdrawal amount exceeds the balance
-                            System.out.println("Insufficient Balance!");
+        } else if (balance < amount) {
+            // checks if withdrawal amount exceeds the balance
+            System.out.println("Insufficient Balance!");
 
-                        } else {
+        } else {
                             // updating and printing balance
-                            balance -= amount;
-                            System.out.println("\nWithdrawal Successful!");
+            balance -= amount;
+            System.out.println("\nWithdrawal Successful!");
+            System.out.println("Updated Balance: " + balance);
 
-                        }
+        }
 
-                        return balance;
+        return balance;
     }
 
     public static void main(String[] args) {
@@ -121,18 +123,14 @@ public class Main {
                         // asking user to enter deposit amount
                         System.out.print("Enter deposit amount: ");
                         double deposit = sc.nextDouble();
-
                         acc.balance = depositMoney(acc.balance, deposit);
-                        System.out.println("Updated Balance: " + acc.balance);
                         break;
 
                     case 3:
                         // asking user to enter withdrawal amount
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
-
                         acc.balance = withdrawMoney(acc.balance, withdraw);
-                        System.out.println("Updated Balance: " + acc.balance);
                         break;
 
                     case 4:
