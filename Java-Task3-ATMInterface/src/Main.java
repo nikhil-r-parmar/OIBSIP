@@ -68,6 +68,10 @@ public class Main {
 
                         //checking whether amount is more than zero or not.
                         if (deposit>0) {
+                            // updating and printing balance
+                            balance += deposit;
+                            System.out.println("\nDeposit SUccessful!");
+                            System.out.println("Updated Balance: " + acc.balance);
 
                         } else {
                             System.out.println("Invalid Deposit Amount!");
