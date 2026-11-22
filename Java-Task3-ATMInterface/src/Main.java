@@ -44,6 +44,9 @@ public class Main {
                 System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.userId);
 
+                int choice;
+                // printing menu once 
+                do {
                 // printing atm operations after successful logic
                 System.out.println("===== ATM MENU =====");
                 System.out.println("1. Check Balance");
@@ -53,7 +56,7 @@ public class Main {
 
                 // taking user's choice as integer
                 System.out.print("\nEnter your choice: ");
-                int choice = sc.nextInt();
+                choice = sc.nextInt();
 
                 // using switch case to perform each operations
                 switch (choice) {
@@ -109,6 +112,9 @@ public class Main {
                         System.out.println("Invalid Choice!");
 
                 }
+                
+                // runs loop again till the choice is not 4
+                } while (choice != 4);
                 
             } else {
                 // print's it if pin doesn't match
