@@ -31,6 +31,8 @@ public class Main {
 
         // counter that count's attemps;
         int counter = 0;
+        // boolean varibale tell's account loggedin or not
+        boolean loggedIn = false;
 
         do {
         // taking inputs from user
@@ -50,6 +52,7 @@ public class Main {
                 // prints success if both matches
                 System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.userId);
+                loggedIn = true; 
 
                 int choice;
                 // repeating ATM menu until user selects exit 
@@ -136,11 +139,10 @@ public class Main {
         }
 
         // outside after 3 attempts
-        } while(counter <= 3);
+        } while(counter < 3);
 
         System.out.println("Account locked!");
-        System.out.println("Account locked!
-Too many failed login attempts.");
+        System.out.println("Too many failed login attempts.");
 
     }
 }
