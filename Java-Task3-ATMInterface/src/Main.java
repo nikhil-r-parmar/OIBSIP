@@ -138,5 +138,9 @@ public class Main {
         // outside after 3 attempts
         } while(counter <= 3);
 
+        System.out.println("Account locked!");
+        System.out.println("Account locked!
+Too many failed login attempts.");
+
     }
 }
