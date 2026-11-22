@@ -48,7 +48,7 @@ public class Main {
                 System.out.println("===== ATM MENU =====");
                 System.out.println("1. Check Balance");
                 System.out.println("2. Deposit Money");
-                System.out.println("3. Withdraw Monet");
+                System.out.println("3. Withdraw Money");
                 System.out.println("4. Exit");
 
                 // taking user's choice as integer
