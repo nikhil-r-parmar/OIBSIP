@@ -29,6 +29,10 @@ public class Main {
         acc.pin = 1234;
         acc.balance = 5000.0;
 
+        // counter that count's attemps;
+        int counter = 0;
+
+        do {
         // taking inputs from user
         System.out.println("===== ATM LOGIN =====");
         System.out.print("Enter User ID: ");
@@ -36,6 +40,9 @@ public class Main {
 
         System.out.print("Enter PIN: ");
         int pin = sc.nextInt();
+
+        // updates counter for each time;
+        counter++;
 
         // checking if user id and pin matches or not
         if (uid.equals(acc.userId)) {
@@ -45,7 +52,7 @@ public class Main {
                 System.out.println("Welcome to " + acc.userId);
 
                 int choice;
-                // printing menu once 
+                // repeating ATM menu until user selects exit 
                 do {
                 // printing atm operations after successful logic
                 System.out.println("===== ATM MENU =====");
