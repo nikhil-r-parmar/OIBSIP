@@ -40,6 +40,26 @@ public class Main {
                         return balance;
     }
 
+    // nethod that withdraw's money form balance
+    public static double withdrawMoney(double balance, double amount) {
+        // checking if amount is less than zero or zero
+                        if (amount <= 0) {
+                            System.out.println("Invalid Withdrawal Amount!");
+
+                        } else if (balance < amount) {
+                            // checks if withdrawal amount exceeds the balance
+                            System.out.println("Insufficient Balance!");
+
+                        } else {
+                            // updating and printing balance
+                            balance -= amount;
+                            System.out.println("\nWithdrawal Successful!");
+
+                        }
+
+                        return balance;
+    }
+
     public static void main(String[] args) {
         // creating object of scanner class to take inputs
         Scanner sc = new Scanner(System.in);
@@ -111,21 +131,8 @@ public class Main {
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
 
-                        // checking if amount is less than zero or zero
-                        if (withdraw <= 0) {
-                            System.out.println("Invalid Withdrawal Amount!");
-
-                        } else if (acc.balance < withdraw) {
-                            // checks if withdrawal amount exceeds the balance
-                            System.out.println("Insufficient Balance!");
-
-                        } else {
-                            // updating and printing balance
-                            acc.balance -= withdraw;
-                            System.out.println("\nWithdrawal Successful!");
-                            System.out.println("Updated Balance: " + acc.balance);
-
-                        }
+                        acc.balance = withdrawMoney(acc.balance, withdraw);
+                        System.out.println("Updated Balance: " + acc.balance);
                         break;
 
                     case 4:
