@@ -17,6 +17,13 @@ class Account {
 
 // main class
 public class Main {
+
+    // method that check's balance 
+    public static void checkBalance(double balance) {
+        System.out.println("Balance: " + balance);
+
+    }
+
     public static void main(String[] args) {
         // creating object of scanner class to take inputs
         Scanner sc = new Scanner(System.in);
@@ -71,7 +78,7 @@ public class Main {
                 // using switch case to perform each operations
                 switch (choice) {
                     case 1:
-                        System.out.println("Balance: " + acc.balance);
+                        checkBalance(acc.balance);
                         break;
 
                     case 2:
