@@ -13,6 +13,11 @@ class Account {
     int pin;
     double balance;
 
+    // parameterized constructor that initiallizes class variables
+    Account(String uId, int pin, double balance) {
+        
+    }
+
 }
 
 // main class
