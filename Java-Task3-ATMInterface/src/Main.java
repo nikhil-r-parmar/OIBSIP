@@ -74,13 +74,8 @@ public class Main {
         // creating object of scanner class to take inputs
         Scanner sc = new Scanner(System.in);
 
-        // created object of account class
-        Account acc = new Account();
-
-        // initialized account class variables
-        acc.userId = "NIKHIL101";
-        acc.pin = 1234;
-        acc.balance = 5000.0;
+        // created object of account class with contructor calling
+        Account acc = new Account("NIKHIL101", 1234, 5000.0);
 
         // counter that count's attemps;
         int counter = 0;
