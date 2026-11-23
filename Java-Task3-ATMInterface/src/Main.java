@@ -14,8 +14,11 @@ class Account {
     double balance;
 
     // parameterized constructor that initiallizes class variables
-    Account(String uId, int pin, double balance) {
-        
+    Account(String uId, int p, double b) {
+        userId = uId;
+        pin = p;
+        balance = b;
+
     }
 
 }
