@@ -12,7 +12,12 @@ import java.util.ArrayList;
 class Account {
 
     // declaring array list for transactions
-    ArrayList<String> transactions = new ArrayList<>();
+    private ArrayList<String> transactions = new ArrayList<>();
+
+    // setter for transaction history
+    public void addTransaction(String transaction) {
+        transactions.add(transaction);
+    }
 
     // private instance variables
     private String userId;
