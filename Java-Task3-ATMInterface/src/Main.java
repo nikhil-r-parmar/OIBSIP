@@ -132,21 +132,21 @@ public class Main {
                 // using switch case to perform each operations
                 switch (choice) {
                     case 1:
-                        checkBalance(acc.balance);
+                        checkBalance(acc.getBalance());
                         break;
 
                     case 2:
                         // asking user to enter deposit amount
                         System.out.print("Enter deposit amount: ");
                         double deposit = sc.nextDouble();
-                        acc.balance = depositMoney(acc.balance, deposit);
+                        acc.getBalance() = depositMoney(acc.getBalance(), deposit);
                         break;
 
                     case 3:
                         // asking user to enter withdrawal amount
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
-                        acc.balance = withdrawMoney(acc.balance, withdraw);
+                        acc.getBalance() = withdrawMoney(acc.getBalance(), withdraw);
                         break;
 
                     case 4:
