@@ -181,8 +181,19 @@ public class Main {
                         break;
 
                     case 4:
+                        System.out.println("\n===== TRANSACTION HISTORY =====");
+
+                        if(acc.transactions.isEmpty()) {
+                            System.our.println("No transactions found!");
+
+                        } else {
+                            for (String transaction : acc.transactions) {
+                                System.out.println(transaction);
+                            }
+
+                        }
                         break;
-                        
+
                     case 5:
                         System.out.println("Thank you for using our ATM!");
                         break;
@@ -193,7 +204,7 @@ public class Main {
                 }
                 
                 // runs loop again till the choice is not 4
-                } while (choice != 4);
+                } while (choice != 5);
             
         } else {
             // prints it if uid & pin doesn't match
