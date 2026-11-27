@@ -162,6 +162,7 @@ public class Main {
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
                         acc.setBalance(withdrawMoney(acc.getBalance(), withdraw));
+                        acc.transactions.add("Withdrawed: Rs. " + withdraw);
                         break;
 
                     case 4:
