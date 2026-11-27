@@ -154,6 +154,7 @@ public class Main {
                         System.out.print("Enter deposit amount: ");
                         double deposit = sc.nextDouble();
                         acc.setBalance(depositMoney(acc.getBalance(), deposit));
+                        acc.transactions.add("Deposited: Rs. " + deposit);
                         break;
 
                     case 3:
