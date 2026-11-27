@@ -137,7 +137,8 @@ public class Main {
                 System.out.println("1. Check Balance");
                 System.out.println("2. Deposit Money");
                 System.out.println("3. Withdraw Money");
-                System.out.println("4. Exit");
+                System.out.println("4. Transaction History");
+                System.out.println("5. Exit");
 
                 // taking user's choice as integer
                 System.out.print("\nEnter your choice: ");
@@ -180,6 +181,9 @@ public class Main {
                         break;
 
                     case 4:
+                        break;
+                        
+                    case 5:
                         System.out.println("Thank you for using our ATM!");
                         break;
                     
