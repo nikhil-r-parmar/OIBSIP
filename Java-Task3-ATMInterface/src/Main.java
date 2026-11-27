@@ -29,7 +29,9 @@ class Account {
 
     // setter that set's balance
     public void setBalance(double balance) {
-        this.balance = balance;
+        if(balance>=0){
+            this.balance = balance;
+        }
     }
 
     // parameterized constructor that initiallizes class variables
