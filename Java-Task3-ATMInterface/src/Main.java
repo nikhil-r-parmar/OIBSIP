@@ -10,6 +10,10 @@ import java.util.ArrayList;
 
 // Account class
 class Account {
+
+    // declaring array list for transactions
+    ArrayList<String> transactions = new ArrayList<>();
+
     // private instance variables
     private String userId;
     private int pin;
