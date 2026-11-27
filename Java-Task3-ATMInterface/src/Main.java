@@ -14,15 +14,15 @@ class Account {
     private double balance;
 
     // getters which makes all three instance varibale accessible
-    String getuserId() {
+    String getUserId() {
         return this.userId;
     }
 
-    int getpin() {
+    int getPin() {
         return this.pin;
     }
 
-    double getbalance() {
+    double getBalance() {
         return this.balance;
     }
 
