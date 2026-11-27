@@ -109,7 +109,7 @@ public class Main {
         counter++;
 
         // checking if user id and pin matches or not
-        if (uid.equals(acc.userId) && pin == acc.pin) {
+        if (uid.equals(acc.getUserId()) && pin == acc.getPin()) {
                 // prints success if both matches
                 System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.userId);
