@@ -145,14 +145,14 @@ public class Main {
                         // asking user to enter deposit amount
                         System.out.print("Enter deposit amount: ");
                         double deposit = sc.nextDouble();
-                        acc.getBalance() = depositMoney(acc.getBalance(), deposit);
+                        acc.setBalance(depositMoney(acc.getBalance(), deposit));
                         break;
 
                     case 3:
                         // asking user to enter withdrawal amount
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
-                        acc.getBalance() = withdrawMoney(acc.getBalance(), withdraw);
+                        acc.setBalance(withdrawMoney(acc.getBalance(), withdraw));
                         break;
 
                     case 4:
