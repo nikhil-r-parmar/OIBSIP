@@ -19,6 +19,24 @@ class Account {
         transactions.add(transaction);
     }
 
+    // method to show transaction history
+    public void showTransactions() {
+        
+        // logic to show transactions history
+        System.out.println("\n===== TRANSACTION HISTORY =====");
+
+        if(acc.transactions.isEmpty()) {
+            System.out.println("No ransactions found!");
+
+        } else {
+            for (String transaction : acc.transactions) {
+                System.out.println(transaction);
+            }
+
+        }
+
+    }
+
     // private instance variables
     private String userId;
     private int pin;
@@ -186,18 +204,7 @@ public class Main {
                         break;
 
                     case 4:
-                        // logic to show transactions history
-                        System.out.println("\n===== TRANSACTION HISTORY =====");
-
-                        if(acc.transactions.isEmpty()) {
-                            System.out.println("No ransactions found!");
-
-                        } else {
-                            for (String transaction : acc.transactions) {
-                                System.out.println(transaction);
-                            }
-
-                        }
+                        acc.showTransactions();
                         break;
 
                     case 5:
