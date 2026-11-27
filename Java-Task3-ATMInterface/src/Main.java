@@ -181,10 +181,11 @@ public class Main {
                         break;
 
                     case 4:
+                        // logic to show transactions history
                         System.out.println("\n===== TRANSACTION HISTORY =====");
 
                         if(acc.transactions.isEmpty()) {
-                            System.our.println("No transactions found!");
+                            System.our.println("No ransactions found!");
 
                         } else {
                             for (String transaction : acc.transactions) {
@@ -203,7 +204,7 @@ public class Main {
 
                 }
                 
-                // runs loop again till the choice is not 4
+                // runs loop again till the choice is not 5
                 } while (choice != 5);
             
         } else {
