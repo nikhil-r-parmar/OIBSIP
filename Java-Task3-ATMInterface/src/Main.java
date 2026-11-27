@@ -5,6 +5,8 @@
 
 // imported scanner class
 import java.util.Scanner;
+// imported arraylist
+import java.util.ArrayList;
 
 // Account class
 class Account {
