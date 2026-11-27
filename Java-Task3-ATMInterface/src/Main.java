@@ -14,16 +14,22 @@ class Account {
     private double balance;
 
     // getters which makes all three instance varibale accessible
-    String getUserId() {
+    public String getUserId() {
         return this.userId;
     }
 
-    int getPin() {
+    public int getPin() {
         return this.pin;
     }
 
-    double getBalance() {
+    public double getBalance() {
         return this.balance;
+    }
+
+
+    // setter that set's balance
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     // parameterized constructor that initiallizes class variables
