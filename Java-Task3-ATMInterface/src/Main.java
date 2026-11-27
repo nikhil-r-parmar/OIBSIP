@@ -13,6 +13,19 @@ class Account {
     private int pin;
     private double balance;
 
+    // getters which makes all three instance varibale accessible
+    String getuserId() {
+        return this.userId;
+    }
+
+    int getpin() {
+        return this.pin;
+    }
+
+    double getbalance() {
+        return this.balance;
+    }
+
     // parameterized constructor that initiallizes class variables
     Account(String uId, int p, double b) {
         userId = uId;
