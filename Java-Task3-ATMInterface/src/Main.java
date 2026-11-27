@@ -112,7 +112,7 @@ public class Main {
         if (uid.equals(acc.getUserId()) && pin == acc.getPin()) {
                 // prints success if both matches
                 System.out.println("Login Successful!");
-                System.out.println("Welcome to " + acc.userId);
+                System.out.println("Welcome to " + acc.getUserId());
                 loggedIn = true; 
 
                 int choice;
