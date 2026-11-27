@@ -162,7 +162,7 @@ public class Main {
 
                         if (deposit > 0) {
                             acc.setBalance(depositMoney(acc.getBalance(), deposit));
-                            acc.transactions.add("Deposited: Rs. " + deposit);
+                            acc.addTransaction("Deposited: Rs. " + deposit);
 
                         } else {
                             depositMoney(acc.getBalance(), deposit);
@@ -177,7 +177,7 @@ public class Main {
 
                         if (withdraw > 0 && acc.getBalance() >= withdraw) {
                             acc.setBalance(withdrawMoney(acc.getBalance(), withdraw));
-                            acc.transactions.add("Withdrawn: Rs. " + withdraw);
+                            acc.addTransaction("Withdrawn: Rs. " + withdraw);
                         
                         } else {
                             withdrawMoney(acc.getBalance(), withdraw);
