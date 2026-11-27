@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 // Account class
 class Account {
-    // instace variables
-    String userId;
-    int pin;
-    double balance;
+    // private instance variables
+    private String userId;
+    private int pin;
+    private double balance;
 
     // parameterized constructor that initiallizes class variables
     Account(String uId, int p, double b) {
