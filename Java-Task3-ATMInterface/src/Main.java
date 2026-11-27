@@ -25,11 +25,11 @@ class Account {
         // logic to show transactions history
         System.out.println("\n===== TRANSACTION HISTORY =====");
 
-        if(acc.transactions.isEmpty()) {
+        if(transactions.isEmpty()) {
             System.out.println("No ransactions found!");
 
         } else {
-            for (String transaction : acc.transactions) {
+            for (String transaction : transactions) {
                 System.out.println(transaction);
             }
 
