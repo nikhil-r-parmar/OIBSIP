@@ -18,13 +18,6 @@ public class ATM {
             return null;
         }
     }
-
-
-    // get account method
-    public Account getAccount() {
-        return bank.getAccount();
-    }
-
     
     // find account method
     public Account findAccount(String userId) {
