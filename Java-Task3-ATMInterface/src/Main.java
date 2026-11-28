@@ -212,7 +212,14 @@ public class Main {
 
                     case 5:
                         System.out.println("Enter Receiver User ID: ");
-                        String reveiverId = sc.nextLine();
+                        String receiverId = sc.nextLine();
+
+                        // checks receiver id exists or not
+                        if (receiverId.equals(receiver.getUserId())) {
+                            System.out.println("Receiver Accoun Found!");
+                        } else {
+                            System.out.println("Invalid Receiver User ID!");
+                        }
                         break;
 
                     case 6:
