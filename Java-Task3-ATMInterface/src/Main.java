@@ -22,10 +22,13 @@ public class Main {
         boolean loggedIn = false;
 
         do {
-        // taking inputs from user
-        System.out.println("===== ATM LOGIN =====");
-        System.out.print("Enter User ID: ");
-        String uid = sc.nextLine();
+            // taking inputs from user
+            System.out.println("\n================================");
+            System.out.println("          NIKHIL BANK");
+            System.out.println("          ATM INTERFACE");
+            System.out.println("================================");
+            System.out.print("Enter User ID: ");
+            String uid = sc.nextLine();
 
         System.out.print("Enter PIN: ");
         int pin = sc.nextInt();
@@ -46,11 +49,8 @@ public class Main {
                 int choice;
                 // repeating ATM menu until user selects exit 
                 do {
-                    // printing atm operations after successful logic
-                    System.out.println("\n================================");
-                    System.out.println("          NIKHIL BANK");
-                    System.out.println("          ATM INTERFACE");
-                    System.out.println("================================");
+                // printing atm operations after successful logic
+                System.out.println("===== ATM MENU =====");
                 System.out.println("1. Check Balance");
                 System.out.println("2. Deposit Money");
                 System.out.println("3. Withdraw Money");
