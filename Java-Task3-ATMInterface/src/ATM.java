@@ -26,6 +26,7 @@ public class ATM {
     }
 
 
+    // method to deposit money
     public void depositMoney(Account account, double amount) {
         if(amount > 0) {
             account.setBalance(account.getBalance() + amount);
@@ -35,6 +36,23 @@ public class ATM {
             System.out.println("Invalid Amount!");
 
         }
+    }
+
+
+    // method to withdraw money
+    public void withdrawMoney(Account account, double amount) {
+        if(amount <= 0) {
+            System.out.println("Invalid amount entered!");
+
+        } else if(account.getBalance() < amount) {
+            System.out.println("Insufficient balance!");
+
+        } else {
+            account.setBalance(account.getBalance() - amount);
+            System.out.println("Updated Balance: " + account.getBalance());
+
+        }
+
     }
     
 }
