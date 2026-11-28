@@ -11,32 +11,6 @@ import java.util.ArrayList;
 // Account class
 class Account {
 
-    // declaring array list for transactions
-    private ArrayList<Transaction> transactions = new ArrayList<>();
-
-    // setter for transaction history
-    public void addTransaction(String transaction) {
-        transactions.add(transaction);
-    }
-
-    // method to show transaction history
-    public void showTransactions() {
-        
-        // logic to show transactions history
-        System.out.println("\n===== TRANSACTION HISTORY =====");
-
-        if(transactions.isEmpty()) {
-            System.out.println("No transactions found!");
-
-        } else {
-            for (String transaction : transactions.) {
-                System.out.println(transaction);
-            }
-
-        }
-
-    }
-
     // private instance variables
     private String userId;
     private int pin;
