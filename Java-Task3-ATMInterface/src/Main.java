@@ -24,7 +24,7 @@ public class Main {
         do {
             // taking inputs from user
             System.out.println("\n================================");
-            System.out.println("          NIKHIL BANK");
+            System.out.println("           NIKHIL BANK");
             System.out.println("          ATM INTERFACE");
             System.out.println("================================");
             System.out.print("Enter User ID: ");

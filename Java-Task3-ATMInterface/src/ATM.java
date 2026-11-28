@@ -27,7 +27,7 @@ public class ATM {
 
     // method to check balance
     public void checkBalance(Account account) {
-        System.out.println("Current Balance: " + account.getBalance());
+        System.out.printf("Current Balance: Rs. %.2f%n", account.getBalance());
     }
 
 
@@ -35,7 +35,7 @@ public class ATM {
     public void depositMoney(Account account, double amount) {
         if(amount > 0) {
             account.setBalance(account.getBalance() + amount);
-            System.out.println("Updated Balance: " + account.getBalance());
+            System.out.printf("Updated Balance: Rs. %.2f%n", account.getBalance());
             System.out.println("Money Deposited Successfully!");
 
             account.addTransaction("Deposited: Rs. " + amount);
@@ -57,7 +57,7 @@ public class ATM {
 
         } else {
             account.setBalance(account.getBalance() - amount);
-            System.out.println("Updated Balance: " + account.getBalance());
+            System.out.printf("Updated Balance: Rs. %.2f%n", account.getBalance());
             System.out.println("Money Withdrawn Successfully!");
 
             account.addTransaction("Withdrawn: Rs. " + amount);
