@@ -20,6 +20,12 @@ public class ATM {
     }
 
 
+    // get account method
+    public Account geAccount() {
+        return bank.getAccount();
+    }
+
+
     // method to check balance
     public void checkBalance(Account account) {
         System.out.println("Current Balance: " + account.getBalance());

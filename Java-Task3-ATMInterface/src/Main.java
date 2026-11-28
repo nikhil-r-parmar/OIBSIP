@@ -59,11 +59,7 @@ public class Main {
 
         //creating ATM class Object
         ATM atm = new ATM();
-
-        // created object of account class with contructor calling
-        Account acc = new Account("NIKHIL101", 1234, 5000.0);
-        //receiver account
-        Account receiver = new Account("NIKHIL102", 5678, 3000.0);
+        Account acc = atm.geAccount();
 
         // counter that count's attemps;
         int counter = 0;
