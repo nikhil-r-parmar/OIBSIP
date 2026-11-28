@@ -26,7 +26,7 @@ class Account {
         System.out.println("\n===== TRANSACTION HISTORY =====");
 
         if(transactions.isEmpty()) {
-            System.out.println("No ransactions found!");
+            System.out.println("No transactions found!");
 
         } else {
             for (String transaction : transactions) {
