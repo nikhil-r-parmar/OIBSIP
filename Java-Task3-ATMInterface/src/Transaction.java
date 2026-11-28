@@ -8,7 +8,7 @@ public class Transaction {
         transactionDetails = transaction;
     }
     
-    public String getTransactions() {
+    public String getTransactionDetails() {
         return transactionDetails;
     }
 }
