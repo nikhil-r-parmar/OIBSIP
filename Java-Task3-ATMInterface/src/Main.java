@@ -134,42 +134,7 @@ public class Main {
                         System.out.print("Enter Receiver User ID: ");
                         String receiverId = sc.next();
 
-                        // checks receiver id exists or not
-                        if (receiverId.equals(receiver.getUserId())) {
-                            System.out.println("Receiver Accoun Found!");
-
-                            // taking transfer amount input
-                            System.out.print("Enter transfer amount: ");
-                            double amount = sc.nextDouble();
-
-                            // checking transfer amount is valid or not
-                            if (amount <= 0) {
-                                System.out.println("Invalid Transfer Amount!");
-
-                            } else if (acc.getBalance() < amount) {
-                                System.out.println("Insufficient Balance!");
-
-                            } else {
-                                System.out.println("Transfer Validated Successfully!");
-
-                                acc.setBalance(acc.getBalance() - amount);
-                                receiver.setBalance( receiver.getBalance()+ amount);
-
-                                System.out.println("\nTransfer Successful!");
-                                System.out.println("Transferred Amount: Rs. " + amount);
-                                System.out.println("Your Updated Balance: Rs. " + acc.getBalance());
-                                System.out.println("Receiver Updated Balance: Rs. " + receiver.getBalance());
-
-                                acc.addTransaction("Transferred: Rs. " + amount + " to " + receiver.getUserId());
-
-                                receiver.addTransaction("Received: Rs. " + amount + " from " + acc.getUserId());
-
-                            }
-
-
-                        } else {
-                            System.out.println("Invalid Receiver User ID!");
-                        }
+                        Account receiver = atm.findAccount(receiverId);
                         break;
 
                     case 6:
