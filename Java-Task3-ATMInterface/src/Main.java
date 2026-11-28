@@ -10,8 +10,12 @@ import java.util.ArrayList;
 
 // Account class
 class Account {
-
     private Transaction transaction = new Transaction();
+    
+    //method to add transaction
+    public void addTransaction(String transaction) {
+        this.transaction.addTransaction(transaction);
+    }
 
     // private instance variables
     private String userId;
