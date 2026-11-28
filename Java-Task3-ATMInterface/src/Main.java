@@ -221,7 +221,19 @@ public class Main {
                             // taking transfer amount input
                             System.out.print("Enter transfer amount: ");
                             double amount = sc.nextDouble();
-                            
+
+                            // checking transfer amount is valid or not
+                            if (amount <= 0) {
+                                System.out.println("Invalid Transfer Amount!");
+
+                            } else if (acc.getBalance() < amount) {
+                                System.out.println("Insufficient Balance!");
+
+                            } else {
+                                System.out.println("Transfer Validated Successfully!");
+
+                            }
+
 
                         } else {
                             System.out.println("Invalid Receiver User ID!");
