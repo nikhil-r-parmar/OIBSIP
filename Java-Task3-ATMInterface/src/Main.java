@@ -232,6 +232,9 @@ public class Main {
                             } else {
                                 System.out.println("Transfer Validated Successfully!");
 
+                                acc.setBalance(acc.getBalance() - amount);
+                                receiver.setBalance( receiver.getBalance()+ amount);
+
                             }
 
 
