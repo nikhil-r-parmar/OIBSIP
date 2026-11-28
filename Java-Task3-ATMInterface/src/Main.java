@@ -30,20 +30,21 @@ public class Main {
             System.out.print("Enter User ID: ");
             String uid = sc.nextLine();
 
-        System.out.print("Enter PIN: ");
-        int pin = sc.nextInt();
-        sc.nextLine();  // another attempt for id
+            System.out.print("Enter PIN: ");
+            int pin = sc.nextInt();
+            sc.nextLine();  // another attempt for id
 
-        // updates counter for each time;
-        counter++;
+            // updates counter for each time;
+            counter++;
 
-        Account loggedAccount = atm.login(uid, pin);
+            Account loggedAccount = atm.login(uid, pin);
 
-        // checking if user id and pin matches or not
-        if (loggedAccount != null) {
+            // checking if user id and pin matches or not
+            if (loggedAccount != null) {
                 // prints success if both matches
-                System.out.println("Login Successful!");
-                System.out.println("Welcome to " + loggedAccount.getUserId());
+                System.out.println("\nLogin Successful!");
+                System.out.println("Welcome, " + loggedAccount.getUserId() + "!");
+                System.out.println("--------------------------------");
                 loggedIn = true; 
 
                 int choice;
