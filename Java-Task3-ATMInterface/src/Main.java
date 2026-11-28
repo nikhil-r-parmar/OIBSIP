@@ -235,6 +235,11 @@ public class Main {
                                 acc.setBalance(acc.getBalance() - amount);
                                 receiver.setBalance( receiver.getBalance()+ amount);
 
+                                System.out.println("\nTransfer Successful!");
+                                System.out.println("Transferred Amount: Rs. " + amount);
+                                System.out.println("Your Updated Balance: Rs. " + acc.getBalance());
+                                System.out.println("Receiver Updated Balance: Rs. " + receiver.getBalance());
+
                             }
 
 
