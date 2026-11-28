@@ -9,50 +9,6 @@ import java.util.Scanner;
 // main class
 public class Main {
 
-    // method that check's balance 
-    public static void checkBalance(double balance) {
-        System.out.println("Balance: " + balance);
-
-    }
-
-    // method that deposit's money
-    public static double depositMoney(double balance, double amount) {
-        //checking whether amount is more than zero or not.
-        if (amount > 0) {
-            // updating and returning balance
-            balance += amount;
-            System.out.println("\nDeposit Successful!");
-            System.out.println("Updated Balance: " + balance);
-
-        } else {
-            System.out.println("Invalid Deposit Amount!");
-
-        }
-
-        return balance;
-    }
-
-    // nethod that withdraw's money form balance
-    public static double withdrawMoney(double balance, double amount) {
-        // checking if amount is less than zero or zero
-        if (amount <= 0) {
-            System.out.println("Invalid Withdrawal Amount!");
-
-        } else if (balance < amount) {
-            // checks if withdrawal amount exceeds the balance
-            System.out.println("Insufficient Balance!");
-
-        } else {
-                            // updating and printing balance
-            balance -= amount;
-            System.out.println("\nWithdrawal Successful!");
-            System.out.println("Updated Balance: " + balance);
-
-        }
-
-        return balance;
-    }
-
     public static void main(String[] args) {
         // creating object of scanner class to take inputs
         Scanner sc = new Scanner(System.in);
