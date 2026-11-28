@@ -123,14 +123,7 @@ public class Main {
                         System.out.print("Enter withdrawal amount: ");
                         double withdraw = sc.nextDouble();
 
-                        if (withdraw > 0 && acc.getBalance() >= withdraw) {
-                            acc.setBalance(withdrawMoney(acc.getBalance(), withdraw));
-                            acc.addTransaction("Withdrawn: Rs. " + withdraw);
-                        
-                        } else {
-                            withdrawMoney(acc.getBalance(), withdraw);
-
-                        }
+                        atm.withdrawMoney(loggedAccount, withdraw);
                         break;
 
                     case 4:
