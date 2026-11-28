@@ -211,12 +211,18 @@ public class Main {
                         break;
 
                     case 5:
-                        System.out.println("Enter Receiver User ID: ");
-                        String receiverId = sc.nextLine();
+                        System.out.print("Enter Receiver User ID: ");
+                        String receiverId = sc.next();
 
                         // checks receiver id exists or not
                         if (receiverId.equals(receiver.getUserId())) {
                             System.out.println("Receiver Accoun Found!");
+
+                            // taking transfer amount input
+                            System.out.print("Enter transfer amount: ");
+                            double amount = sc.nextDouble();
+                            
+
                         } else {
                             System.out.println("Invalid Receiver User ID!");
                         }
