@@ -12,7 +12,7 @@ import java.util.ArrayList;
 class Account {
 
     // declaring array list for transactions
-    private ArrayList<String> transactions = new ArrayList<>();
+    private ArrayList<Transaction> transactions = new ArrayList<>();
 
     // setter for transaction history
     public void addTransaction(String transaction) {
@@ -29,7 +29,7 @@ class Account {
             System.out.println("No transactions found!");
 
         } else {
-            for (String transaction : transactions) {
+            for (String transaction : transactions.) {
                 System.out.println(transaction);
             }
 

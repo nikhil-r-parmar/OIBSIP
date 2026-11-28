@@ -1,8 +1,10 @@
 
 // class that handles transactions
 
+import java.util.ArrayList;
+
 public class Transaction {
-    private String transactionDetails;
+    private ArrayList<String> transactions = new ArrayList<>();
 
     Transaction(String transaction) {
         transactionDetails = transaction;
