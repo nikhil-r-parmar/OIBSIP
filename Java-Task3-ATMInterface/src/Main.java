@@ -131,5 +131,8 @@ public class Main {
             System.out.println("Too many failed login attempts.");
         }
 
+
+        sc.close();
+
     }
 }
