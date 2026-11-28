@@ -87,4 +87,4 @@ This project stores account balances and transaction history in memory. Data res
 
 **Internship:** Oasis Infobyte – Java Development  
 **Task:** Task 3 – ATM Interface  
-**Developer:** Nikhil Parmar
+**Developer:** Nikhil Parmar.
