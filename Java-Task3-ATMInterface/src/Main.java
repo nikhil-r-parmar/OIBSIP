@@ -11,6 +11,8 @@ import java.util.ArrayList;
 // Account class
 class Account {
 
+    private Transaction transaction = new Transaction();
+
     // private instance variables
     private String userId;
     private int pin;
