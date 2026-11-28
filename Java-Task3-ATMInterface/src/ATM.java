@@ -25,6 +25,12 @@ public class ATM {
         return bank.getAccount();
     }
 
+    
+    // find account method
+    public Account findAccount(String userId) {
+        return bank.findAccount(userId);
+    }
+
 
     // method to check balance
     public void checkBalance(Account account) {
