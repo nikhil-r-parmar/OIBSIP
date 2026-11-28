@@ -14,18 +14,18 @@ public class Transaction {
     // method to show transaction history
     public void showTransactions() {
         
-    // logic to show transactions history
-    System.out.println("\n===== TRANSACTION HISTORY =====");
+        // logic to show transactions history
+        System.out.println("\n===== TRANSACTION HISTORY =====");
 
-    if(transactions.isEmpty()) {
-        System.out.println("No transactions found!");
+        if(transactions.isEmpty()) {
+            System.out.println("No transactions found!");
 
-    } else {
-        for (String transaction : transactions.) {
-            System.out.println(transaction);
+        } else {
+            for (String transaction : transactions.) {
+                System.out.println(transaction);
+            }
+
         }
-
-    }
 
     }
 
