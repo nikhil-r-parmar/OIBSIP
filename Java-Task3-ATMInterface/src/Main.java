@@ -115,14 +115,7 @@ public class Main {
                         System.out.print("Enter deposit amount: ");
                         double deposit = sc.nextDouble();
 
-                        if (deposit > 0) {
-                            acc.setBalance(depositMoney(acc.getBalance(), deposit));
-                            acc.addTransaction("Deposited: Rs. " + deposit);
-
-                        } else {
-                            depositMoney(acc.getBalance(), deposit);
-                            
-                        }
+                        atm.depositMoney(loggedAccount, deposit);
                         break;
 
                     case 3:
