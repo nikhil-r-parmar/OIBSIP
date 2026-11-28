@@ -15,5 +15,10 @@ public class Bank {
             return null;
         }
     }
+
+    // method to access account in main
+    public Account getAccount() {
+        return acc1;
+    }
     
 }
