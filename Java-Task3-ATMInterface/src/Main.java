@@ -57,6 +57,9 @@ public class Main {
         // creating object of scanner class to take inputs
         Scanner sc = new Scanner(System.in);
 
+        //creating ATM class Object
+        ATM atm = new ATM();
+
         // created object of account class with contructor calling
         Account acc = new Account("NIKHIL101", 1234, 5000.0);
         //receiver account
