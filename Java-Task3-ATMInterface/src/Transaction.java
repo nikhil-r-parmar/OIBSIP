@@ -21,7 +21,7 @@ public class Transaction {
             System.out.println("No transactions found!");
 
         } else {
-            for (String transaction : transactions.) {
+            for (String transaction : transactions) {
                 System.out.println(transaction);
             }
 
