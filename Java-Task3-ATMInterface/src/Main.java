@@ -211,6 +211,8 @@ public class Main {
                         break;
 
                     case 5:
+                        System.out.println("Enter Receiver User ID: ");
+                        String reveiverId = sc.nextLine();
                         break;
 
                     case 6:
