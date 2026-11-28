@@ -135,6 +135,13 @@ public class Main {
                         String receiverId = sc.next();
 
                         Account receiver = atm.findAccount(receiverId);
+
+                        // checking if receiver is null or not
+                        if(receiver == null) {
+                            System.out.println("Receiver account not found!");
+                        } else {
+                            
+                        }
                         break;
 
                     case 6:
