@@ -240,6 +240,10 @@ public class Main {
                                 System.out.println("Your Updated Balance: Rs. " + acc.getBalance());
                                 System.out.println("Receiver Updated Balance: Rs. " + receiver.getBalance());
 
+                                acc.addTransaction("Transferred: Rs. " + amount + " to " + receiver.getUserId());
+
+                                receiver.addTransaction("Received: Rs. " + amount + " from " + acc.getUserId());
+
                             }
 
 
