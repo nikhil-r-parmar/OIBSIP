@@ -80,7 +80,12 @@ public class ATM {
 
             receiver.addTransaction("Received: Rs. " + amount + " from " + sender.getUserId());
 
+        }
 
+
+        // method to show transaction history
+        public void showTransactionHistory(Account account) {
+            
         }
 
     }
