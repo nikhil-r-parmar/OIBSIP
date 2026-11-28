@@ -50,14 +50,15 @@ public class Main {
                 int choice;
                 // repeating ATM menu until user selects exit 
                 do {
-                // printing atm operations after successful logic
-                System.out.println("===== ATM MENU =====");
-                System.out.println("1. Check Balance");
-                System.out.println("2. Deposit Money");
-                System.out.println("3. Withdraw Money");
-                System.out.println("4. Transaction History");
-                System.out.println("5. Transfer Money");
-                System.out.println("6. Exit");
+                    // printing atm operations after successful logic
+                    System.out.println("\n----------- ATM MENU -----------");
+                    System.out.println("1. Check Balance");
+                    System.out.println("2. Deposit Money");
+                    System.out.println("3. Withdraw Money");
+                    System.out.println("4. Transaction History");
+                    System.out.println("5. Transfer Money");
+                    System.out.println("6. Exit");
+                    System.out.println("--------------------------------");
 
                 // taking user's choice as integer
                 System.out.print("\nEnter your choice: ");
