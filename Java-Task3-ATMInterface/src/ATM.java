@@ -33,6 +33,8 @@ public class ATM {
             System.out.println("Updated Balance: " + account.getBalance());
             System.out.println("Money Deposited Successfull!");
 
+            account.addTransaction("Deposited: Rs. " + amount);
+
         } else {
             System.out.println("Invalid Amount!");
 
@@ -53,6 +55,8 @@ public class ATM {
             System.out.println("Updated Balance: " + account.getBalance());
             System.out.println("Money Withdrawan Successfull!");
 
+            account.addTransaction("Withdrawn: Rs. " + amount);
+
         }
 
     }
@@ -71,6 +75,11 @@ public class ATM {
             receiver.setBalance(receiver.getBalance() + amount);
             System.out.println("Money Transferred Successfull!");
             System.out.println("Updated Balance: " + sender.getBalance());
+
+            sender.addTransaction("Transferred: Rs. " + amount + " to " + receiver.getUserId());
+
+            receiver.addTransaction("Received: Rs. " + amount + " from " + sender.getUserId());
+
 
         }
 
