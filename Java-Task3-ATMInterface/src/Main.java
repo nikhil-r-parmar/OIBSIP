@@ -140,7 +140,10 @@ public class Main {
                         if(receiver == null) {
                             System.out.println("Receiver account not found!");
                         } else {
-                            
+                            System.out.print("Enter amount to transfer: ");;
+                            double amount = sc.nextDouble();
+                            sc.nextLine();
+
                         }
                         break;
 
