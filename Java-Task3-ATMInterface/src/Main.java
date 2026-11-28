@@ -126,6 +126,8 @@ public class Main {
 
         // created object of account class with contructor calling
         Account acc = new Account("NIKHIL101", 1234, 5000.0);
+        //receiver account
+        Account receiver = new Account("NIKHIL102", 5678, 3000.0);
 
         // counter that count's attemps;
         int counter = 0;
@@ -161,7 +163,8 @@ public class Main {
                 System.out.println("2. Deposit Money");
                 System.out.println("3. Withdraw Money");
                 System.out.println("4. Transaction History");
-                System.out.println("5. Exit");
+                System.out.println("5. Transfer Money");
+                System.out.println("6. Exit");
 
                 // taking user's choice as integer
                 System.out.print("\nEnter your choice: ");
@@ -208,6 +211,9 @@ public class Main {
                         break;
 
                     case 5:
+                        break;
+
+                    case 6:
                         System.out.println("Thank you for using our ATM!");
                         break;
                     
@@ -216,8 +222,8 @@ public class Main {
 
                 }
                 
-                // runs loop again till the choice is not 5
-                } while (choice != 5);
+                // runs loop again till the choice is not 6
+                } while (choice != 6);
             
         } else {
             // prints it if uid & pin doesn't match
