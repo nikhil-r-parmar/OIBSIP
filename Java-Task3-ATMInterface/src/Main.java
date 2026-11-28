@@ -46,8 +46,11 @@ public class Main {
                 int choice;
                 // repeating ATM menu until user selects exit 
                 do {
-                // printing atm operations after successful logic
-                System.out.println("===== ATM MENU =====");
+                    // printing atm operations after successful logic
+                    System.out.println("\n================================");
+                    System.out.println("          NIKHIL BANK");
+                    System.out.println("          ATM INTERFACE");
+                    System.out.println("================================");
                 System.out.println("1. Check Balance");
                 System.out.println("2. Deposit Money");
                 System.out.println("3. Withdraw Money");
