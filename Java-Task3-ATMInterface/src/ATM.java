@@ -22,7 +22,7 @@ public class ATM {
 
     // method to check balance
     public void checkBalance(Account account) {
-        account.getBalance();
+        System.out.println("Current Balance: " + account.getBalance());
     }
     
 }
