@@ -40,10 +40,10 @@ public class Account {
     }
 
     // parameterized constructor that initiallizes class variables
-    public Account(String uId, int p, double b) {
-        userId = uId;
-        pin = p;
-        balance = b;
+    public Account(String userId, int pin, double balance) {
+        this.userId = userId;
+        this.pin = pin;
+        this.balance = balance;
 
     }
 
