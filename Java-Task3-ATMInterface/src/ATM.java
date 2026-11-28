@@ -31,6 +31,7 @@ public class ATM {
         if(amount > 0) {
             account.setBalance(account.getBalance() + amount);
             System.out.println("Updated Balance: " + account.getBalance());
+            System.out.println("Money Deposited Successfull!");
 
         } else {
             System.out.println("Invalid Amount!");
@@ -50,6 +51,26 @@ public class ATM {
         } else {
             account.setBalance(account.getBalance() - amount);
             System.out.println("Updated Balance: " + account.getBalance());
+            System.out.println("Money Withdrawan Successfull!");
+
+        }
+
+    }
+
+
+    // method to transfer money
+    public void transferMoney(Account sender, Account receiver, double amount) {
+        if(amount <= 0) {
+            System.out.println("Invalid amount entered!");
+
+        } else if(sender.getBalance() < amount) {
+            System.out.println("Insufficient balance!");
+
+        } else {
+            sender.setBalance(sender.getBalance() - amount);
+            receiver.setBalance(receiver.getBalance() + amount);
+            System.out.println("Money Transferred Successfull!");
+            System.out.println("Updated Balance: " + sender.getBalance());
 
         }
 
