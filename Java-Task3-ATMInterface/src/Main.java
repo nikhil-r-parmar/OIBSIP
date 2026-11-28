@@ -127,7 +127,7 @@ public class Main {
                         break;
 
                     case 4:
-                        acc.showTransactions();
+                        atm.showTransactionHistory(loggedAccount);
                         break;
 
                     case 5:
