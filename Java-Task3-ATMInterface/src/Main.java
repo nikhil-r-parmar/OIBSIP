@@ -60,72 +60,71 @@ public class Main {
                     System.out.println("6. Exit");
                     System.out.println("--------------------------------");
 
-                // taking user's choice as integer
-                System.out.print("\nEnter your choice: ");
-                choice = sc.nextInt();
+                    // taking user's choice as integer
+                    System.out.print("\nChoose an option (1-6): ");
+                    choice = sc.nextInt();
 
-                // using switch case to perform each operations
-                switch (choice) {
-                    case 1:
-                        atm.checkBalance(loggedAccount);
-                        break;
+                    // using switch case to perform each operations
+                    switch (choice) {
+                        case 1:
+                            atm.checkBalance(loggedAccount);
+                            break;
 
-                    case 2:
-                        // asking user to enter deposit amount
-                        System.out.print("Enter deposit amount: ");
-                        double deposit = sc.nextDouble();
+                        case 2:
+                            // asking user to enter deposit amount
+                            System.out.print("Enter deposit amount: ");
+                            double deposit = sc.nextDouble();
 
-                        atm.depositMoney(loggedAccount, deposit);
-                        break;
+                            atm.depositMoney(loggedAccount, deposit);
+                            break;
 
-                    case 3:
-                        // asking user to enter withdrawal amount
-                        System.out.print("Enter withdrawal amount: ");
-                        double withdraw = sc.nextDouble();
+                        case 3:
+                            // asking user to enter withdrawal amount
+                            System.out.print("Enter withdrawal amount: ");
+                            double withdraw = sc.nextDouble();
 
-                        atm.withdrawMoney(loggedAccount, withdraw);
-                        break;
+                            atm.withdrawMoney(loggedAccount, withdraw);
+                            break;
 
-                    case 4:
-                        atm.showTransactionHistory(loggedAccount);
-                        break;
+                        case 4:
+                            atm.showTransactionHistory(loggedAccount);
+                            break;
 
-                    case 5:
-                        System.out.print("Enter Receiver User ID: ");
-                        String receiverId = sc.next();
+                        case 5:
+                            System.out.print("Enter Receiver User ID: ");
+                            String receiverId = sc.next();
 
-                        Account receiver = atm.findAccount(receiverId);
+                            Account receiver = atm.findAccount(receiverId);
 
-                        // checking if receiver is null or not
-                        if(receiver == null) {
-                            System.out.println("Receiver account not found!");
-                        } else {
-                            System.out.print("Enter amount to transfer: ");
-                            double amount = sc.nextDouble();
-                            sc.nextLine();
+                            // checking if receiver is null or not
+                            if(receiver == null) {
+                                System.out.println("Receiver account not found!");
 
-                            atm.transferMoney(loggedAccount, receiver, amount);
+                            } else {
+                                System.out.print("Enter amount to transfer: ");
+                                double amount = sc.nextDouble();
+                                sc.nextLine();
 
-                        }
-                        break;
+                                atm.transferMoney(loggedAccount, receiver, amount);
 
-                    case 6:
-                        System.out.println("Thank you for using our ATM!");
-                        break;
+                            }
+                            break;
+
+                        case 6:
+                            System.out.println("Thank you for using our ATM!");
+                            break;
                     
-                    default:
-                        System.out.println("Invalid Choice!");
-
-                }
-                
+                        default:
+                            System.out.println("Invalid Choice!");
+                    }
+    
                 // runs loop again till the choice is not 6
                 } while (choice != 6);
             
-        } else {
-            // prints it if uid & pin doesn't match
-            System.out.println("Invalid User ID or Pin.");
-
-        }
+            } else {
+                // prints it if uid & pin doesn't match
+                System.out.println("Invalid User ID or Pin.");
+            }
 
         // outside after 3 attempts
         } while(counter < 3 && !loggedIn);
