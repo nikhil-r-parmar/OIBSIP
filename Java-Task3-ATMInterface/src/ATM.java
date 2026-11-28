@@ -18,5 +18,11 @@ public class ATM {
             return null;
         }
     }
+
+
+    // method to check balance
+    public void checkBalance(Account account) {
+        account.getBalance();
+    }
     
 }
