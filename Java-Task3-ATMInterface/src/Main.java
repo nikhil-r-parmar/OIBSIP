@@ -85,7 +85,7 @@ public class Main {
         if (loggedAccount != null) {
                 // prints success if both matches
                 System.out.println("Login Successful!");
-                System.out.println("Welcome to " + acc.getUserId());
+                System.out.println("Welcome to " + loggedAccount.getUserId());
                 loggedIn = true; 
 
                 int choice;
@@ -107,7 +107,7 @@ public class Main {
                 // using switch case to perform each operations
                 switch (choice) {
                     case 1:
-                        checkBalance(acc.getBalance());
+                        atm.checkBalance(loggedAccount);
                         break;
 
                     case 2:
