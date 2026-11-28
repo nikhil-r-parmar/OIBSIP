@@ -15,7 +15,6 @@ public class Main {
 
         //creating ATM class Object
         ATM atm = new ATM();
-        Account acc = atm.geAccount();
 
         // counter that count's attemps;
         int counter = 0;
@@ -96,7 +95,7 @@ public class Main {
                         if(receiver == null) {
                             System.out.println("Receiver account not found!");
                         } else {
-                            System.out.print("Enter amount to transfer: ");;
+                            System.out.print("Enter amount to transfer: ");
                             double amount = sc.nextDouble();
                             sc.nextLine();
 
