@@ -144,6 +144,8 @@ public class Main {
                             double amount = sc.nextDouble();
                             sc.nextLine();
 
+                            atm.transferMoney(loggedAccount, receiver, amount);
+
                         }
                         break;
 
