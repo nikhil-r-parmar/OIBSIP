@@ -79,8 +79,10 @@ public class Main {
         // updates counter for each time;
         counter++;
 
+        Account loggedAccount = atm.login(uid, pin);
+
         // checking if user id and pin matches or not
-        if (uid.equals(acc.getUserId()) && pin == acc.getPin()) {
+        if (loggedAccount != null) {
                 // prints success if both matches
                 System.out.println("Login Successful!");
                 System.out.println("Welcome to " + acc.getUserId());
