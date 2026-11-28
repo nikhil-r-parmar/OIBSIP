@@ -17,6 +17,10 @@ class Account {
         this.transaction.addTransaction(transaction);
     }
 
+    public void showTransactions() {
+        transaction.showTransactions();
+    }
+
     // private instance variables
     private String userId;
     private int pin;
