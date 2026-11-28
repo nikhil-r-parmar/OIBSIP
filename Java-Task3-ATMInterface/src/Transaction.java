@@ -15,7 +15,7 @@ public class Transaction {
     public void showTransactions() {
         
         // logic to show transactions history
-        System.out.println("\n===== TRANSACTION HISTORY =====");
+        System.out.println("\n-------- TRANSACTION HISTORY --------");
 
         if(transactions.isEmpty()) {
             System.out.println("No transactions found!");

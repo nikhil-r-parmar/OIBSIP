@@ -82,7 +82,7 @@ public class ATM {
             sender.setBalance(sender.getBalance() - amount);
             receiver.setBalance(receiver.getBalance() + amount);
             System.out.println("Money Transferred Successfully!");
-            System.out.println("Updated Balance: " + sender.getBalance());
+            System.out.printf("Updated Balance: Rs. %.2f%n", sender.getBalance());
 
             sender.addTransaction("Transferred: Rs. " + amount + " to " + receiver.getUserId());
 
