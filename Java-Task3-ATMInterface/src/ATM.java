@@ -82,11 +82,11 @@ public class ATM {
 
         }
 
+    }
 
-        // method to show transaction history
-        public void showTransactionHistory(Account account) {
-            
-        }
+    // method to show transaction history
+    public void showTransactionHistory(Account account) {
+        account.showTransactions();
 
     }
     
